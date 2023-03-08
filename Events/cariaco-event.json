@@ -47,21 +47,21 @@
             "description": "Muller-Karger et al. (2019) Time-series Niskin-bottle sample data from R/V Hermano Gines cruises in the Cariaco Basin from 1995 through 2017 (CARIACO Ocean Time-Series Program) (Version 1).",
             "provider": [
                 {
-                    "@id": "https://oceanexpert.org/institution/18963",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/18963",
                     "legalName": "College of Marine Sciences, University of South Florida",
                     "name": "College of Marine Sciences, University of South Florida",
                     "url": "https://imars.usf.edu/publications/"
                 },
                 {
-                    "@id": "https://orcid.org/0000-0003-3159-5011",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0003-3159-5011",
                     "legalName": "Frank Muller-Karger",
                     "name": "Frank Muller-Karger"
                 },
                 {
-                    "@id": "https://oceanexpert.org/institution/9783",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/9783",
                     "legalName": "Woods Hole Oceanographic Institution",
                     "name": "BCO-DMO",
                     "url": "https://www.bco-dmo.org/"

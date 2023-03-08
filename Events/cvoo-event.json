@@ -46,21 +46,21 @@
             "description": "",
             "provider": [
                 {
-                    "@id": "https://oceanexpert.org/institution/14214",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/14214",
                     "legalName": "Helmholtz Centre for Ocean Research Kiel",
                     "name": "GEOMAR",
                     "url": "https://www.geomar.de/"
                 },
                 {
-                    "@id": "https://orcid.org/0000-0001-8525-8446",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0001-8525-8446",
                     "legalName": "Björn Fiedler",
                     "name": "Björn Fiedler"
                 },
                 {
-                    "@id": "",
                     "@type": "Organization",
+                    "identifier":"",
                     "legalName": "Data Publisher for Earth & Environmental Science",
                     "name": "PANGAEA",
                     "url": "https://www.pangaea.de/"

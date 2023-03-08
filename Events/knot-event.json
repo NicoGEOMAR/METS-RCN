@@ -46,21 +46,21 @@
             "description": "Waikita et al. (2012) Dissolved inorganic carbon, total alkalinity, temperature, salinity and other variables collected via time series monitoring from BOSEI MARU NO. 2, HAKUREI MARU and others in the North Pacific Ocean from 1992-06-23 to 2012-12-31",
             "provider": [
                 {
-                    "@id": "https://oceanexpert.org/institution/11797",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/11797",
                     "legalName": "Japan Agency for Marine-Earth Science and Technology",
                     "name": "JAMSTEC",
                     "url": "http://www.jamstec.go.jp/e/index.html"
                 },
                 {
-                    "@id": "https://orcid.org/0000-0002-3333-0546",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0002-3333-0546",
                     "legalName": "Masahide Wakita",
                     "name": "Masahide Wakita"
                 },
                 {
-                    "@id": "https://oceanexpert.org/institution/17596",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/17596",
                     "legalName": "NOAA NESDIS National Centers for Environmental Information",
                     "name": "NCEI",
                     "url": "https://www.ncei.noaa.gov/"

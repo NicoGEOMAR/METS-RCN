@@ -55,21 +55,21 @@
             "description": "Dissolved inorganic carbon, alkalinity, water temperature, salinity and other variables collected from discrete sample, profile and time series observations from Ocean Weather Station M (66° N, 2° E) in the Norwegian Sea from 2001-10-31 to 2021-07-30 (NCEI Accession 0112884).",
             "provider": [
                 {
-                    "@id": "https://oceanexpert.org/institution/19398",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/19398",
                     "legalName": "University of Bergen",
                     "name": "UiB",
                     "url": "https://www.uib.no"
                 },
                 {
-                    "@id": "https://orcid.org/0000-0001-6761-5016",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0001-6761-5016",
                     "legalName": "Ingunn Skjelvan",
                     "name": "Ingunn Skjelvan"
                 },
                 {
-                    "@id": "https://oceanexpert.org/institution/17596",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/17596",
                     "legalName": "NOAA NESDIS National Centers for Environmental Information",
                     "name": "NCEI",
                     "url": "https://www.ncei.noaa.gov/"

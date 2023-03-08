@@ -46,14 +46,14 @@
             "description": "GIFT database (2005-2015): Hydrographic and carbon system parameters in the Strait of Gibraltar",
             "provider": [
                 {
-                    "@id": "https://orcid.org/0000-0003-1033-7937",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0003-1033-7937",
                     "legalName": "Emma Huertas",
                     "name": "Emma Huertas"
                 },
                 {
-                    "@id": "https://oceanexpert.org/institution/17932",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/17932",
                     "legalName": "Instituto Ciencias del Mar ",
                     "name": "CSIC",
                     "url": "https://www.icm.csic.es/"

@@ -46,21 +46,21 @@
             "description": "Coppola Laurent, Diamond Riquier Emilie, Carval Thierry (2021). Dyfamed observatory data.",
             "provider": [
                 {
-                    "@id": "https://oceanexpert.org/institution/6514",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/6514",
                     "legalName": "Institut Français de Recherche pour l'Exploitation de la Mer",
                     "name": "IFREMER",
                     "url": "http://www.jamstec.go.jp/e/index.html"
                 },
                 {
-                    "@id": "https://orcid.org/0000-0003-0473-1129",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0003-0473-1129",
                     "legalName": "Laurent Coppola",
                     "name": "Laurent Coppola"
                 },
                 {
-                    "@id": "https://oceanexpert.org/institution/41443",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/41443",
                     "legalName": "stat unescap",
                     "name": "SANOE",
                     "url": "https://www.seanoe.org/"

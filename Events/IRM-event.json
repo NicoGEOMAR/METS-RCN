@@ -21,7 +21,7 @@
         "description": "Irminger Sea",
         "geo": {
             "@type": "GeoShape",
-            "polygon": "64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+            "polygon": "64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
         },
         "additionalProperty": [
             {
@@ -61,21 +61,21 @@
             "description": "Dissolved inorganic carbon (DIC), total alkalinity, temperature, salinity, nutrients and dissolved oxygen collected from discrete samples and profile observations during the R/Vs Arni Fridriksson and Bjarni Saemundsson Irminger Sea (FX9) time series cruises in the North Atlantic Ocean.",
             "provider": [
                 {
-                    "@id": "https://oceanexpert.org/institution/18341",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/18341",
                     "legalName": "Marine and Freshwater Research Institute",
                     "name": "MFRI",
                     "url": "https://www.hafogvatn.is"
                 },
                 {
-                    "@id": "https://orcid.org/0000-0001-5439-2546",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0001-5439-2546",
                     "legalName": "Sólveig Ólafsdóttir",
                     "name": "Sólveig Ólafsdóttir"
                 },
                 {
-                    "@id": "https://oceanexpert.org/institution/17596",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/17596",
                     "legalName": "NOAA NESDIS National Centers for Environmental Information",
                     "name": "NCEI",
                     "url": "https://www.ncei.noaa.gov/"
@@ -96,7 +96,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
@@ -228,7 +228,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
@@ -361,7 +361,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
@@ -495,7 +495,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
@@ -630,7 +630,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
@@ -767,7 +767,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
@@ -905,7 +905,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
@@ -1043,7 +1043,7 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon":"64.4000 -28.0200, 64,3212 -28.0200, 64,3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
                 },
                 "additionalProperty": [
                     {
