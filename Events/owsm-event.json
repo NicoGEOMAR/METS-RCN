@@ -1,0 +1,329 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "EventSeries",
+    "@id": "https://pidOfThisJsonLDdoc.org/",
+    "name": "Ocean Weather Station Mike Bottle Data",
+    "description":"Time series of inorganic carbon, alkalinity, and hydrography from the fixed station Ocean Weather Station M (OWSM) in the Norwegian Sea at 66 degree N 2 degree E.",
+    "url": "",
+    "keywords": [
+        "OWSM",
+        "hydrography",
+        "biogeochemical",
+        "bottle"
+    ],
+    "startDate": "2001-10-31T00:00:00Z",
+    "endDate": "2021-11-26T00:00:00Z",
+    "location": {
+        "name": "OWSM",
+        "@type": "Place",
+        "description": "Norwegian Sea",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "66.0100 1.9800, 65.8000 1.9800, 65.8000 2.2400, 66.0100 2.2400, 66.0100 1.9800"
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "GPS Accuracy / Location error",
+                "value": "18",
+                "unitCode": "http://qudt.org/vocab/unit/M"
+            }
+        ]
+    },
+    "funder": ["Reasearch Council of Norway, Norwegian Environmental Agency, European Union"],
+    "funding": "Monitoring Ocean Acidification of Norwegian water",
+    "citation": [
+        "https://www.uib.no/en/rg/fysos/57998/station-m"
+    ],
+    "contributor": [
+        "Ingunn Skjelvan",
+        "Francisco Rey",
+        "Svein Østerhus"
+    ],   
+    "subjectOf": [
+        {
+            "@type": "Dataset",
+            "url": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/",
+            "identifier": "https://doi.org/10.3334/cdiac/otg_tsm_ows_m_66n_2e",
+            "description": "Dissolved inorganic carbon, alkalinity, water temperature, salinity and other variables collected from discrete sample, profile and time series observations from Ocean Weather Station M (66° N, 2° E) in the Norwegian Sea from 2001-10-31 to 2021-07-30 (NCEI Accession 0112884).",
+            "provider": [
+                {
+                    "@id": "https://oceanexpert.org/institution/19398",
+                    "@type": "Organization",
+                    "legalName": "University of Bergen",
+                    "name": "UiB",
+                    "url": "https://www.uib.no"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0001-6761-5016",
+                    "@type": "Person",
+                    "legalName": "Ingunn Skjelvan",
+                    "name": "Ingunn Skjelvan"
+                },
+                {
+                    "@id": "https://oceanexpert.org/institution/17596",
+                    "@type": "Organization",
+                    "legalName": "NOAA NESDIS National Centers for Environmental Information",
+                    "name": "NCEI",
+                    "url": "https://www.ncei.noaa.gov/"
+                }
+            ]
+        }
+    ],
+    "subevent": [
+        {
+            "@type": "Event",
+            "name": "First two years of biogeochemical measurements",
+            "description": "Hydrographic bottle measurements at OWSM",
+            "instrument": ["M/S Polarfront"],
+            "startDate": "2001-10-31T00:00:00Z",
+            "endDate": "2002-12-31T00:00:00Z",
+            "location": {
+                "name": "OWSM",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "66.0000",
+                    "longitude":"2.0000"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Visual Starch"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Skalar Auto Analyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Reference Material: KANSO",
+                    "Poisoned"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Skalar Auto Analyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Reference Material: KANSO",
+                    "Poisoned"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Skalar Auto Analyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Reference Material: KANSO",
+                    "Poisoned"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "VINDTA 3D",
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "VINDTA 3S",
+                "object":[
+                    "Titration: Potentiometric",
+                    "open cell",
+                    "curve fitting method: least-squares optimisation",
+                    "CRM",
+                    "poisoned"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements since 2003",
+            "description": "Hydrographic bottle measurements at OWSM",
+            "instrument": ["M/S Polarfront"],
+            "startDate": "2003-01-21T00:00:00Z",
+            "endDate": "2021-07-30T00:00:00Z",
+            "location": {
+                "name": "OWSM",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "66.0100 1.9800, 65.8000 1.9800, 65.8000 2.2400, 66.0100 2.2400, 66.0100 1.9800"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Visual Starch"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Alpkem",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Reference Material: KANSO",
+                    "Poisoned"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Alpkem",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Reference Material: KANSO",
+                    "Poisoned"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Alpkem",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Reference Material: KANSO",
+                    "Poisoned"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "VINDTA 3D",
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "VINDTA 3S",
+                "object":[
+                    "Titration: Potentiometric",
+                    "open cell",
+                    "curve fitting method: least-squares optimisation",
+                    "CRM",
+                    "poisoned"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0112884/"
+                ]
+            }]
+        }
+    ]
+}
