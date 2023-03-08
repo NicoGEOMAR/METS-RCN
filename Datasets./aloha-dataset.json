@@ -1,0 +1,497 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "HOT: Niskin bottle samples",
+  "description": "Monthly measurements of the thermohaline structure, water column chemistry, and primary production were collected at station ALOHA as part of the HOT program.",
+  "url": "https://www.bco-dmo.org/dataset/3773",
+  "sameAs": "https://hahana.soest.hawaii.edu/hot/",
+  "version": "2021-04-19",
+  "keywords": ["ALOHA", "HOT", "Niskin Bottles", "Biogeochemistry"],
+  "isAccessibleForFree": true,
+  "datePublished": "2021-04-19",
+  "identifier": {
+    "@id": "https://doi.org/10.1575/1912/bco-dmo.3773.1",
+    "@type": "PropertyValue",
+    "name": "DOI: 10.1575/1912/bco-dmo.3773.1",
+    "propertyID": "https://registry.identifiers.org/registry/doi",
+    "value": "doi:10.1575/1912/bco-dmo.3773.1",
+    "url": "https://doi.org/10.1575/1912/bco-dmo.3773.1"
+  },
+  "about": 
+  {
+    "@type":"Event",
+    "name": "HOT ALOHA Niskin Bottles",
+    "description": "Monthly measurements of the thermohaline structure, water column chemistry, and primary production were collected at station ALOHA as part of the HOT program.",
+    "startDate": "1988-10-31T00:56:00Z",
+    "endDate": "2019-12-20T08:51:00Z"
+  },
+  "citation": "Karl, D. (2018) Niskin bottle water samples and CTD measurements from the Hawaii Ocean Time-Series cruises from 1988-2016 (HOT project)",
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/HOT/niskin_v2.html0",
+    "encodingFormat": "application/x-matlab-data"
+  },
+  "temporalCoverage": "1988-10-30/2019-12-20",
+  "location": {
+		"name": "HOT: Stations offshore of Hawaii",
+        "@type": "Place",
+		"description": "North Pacific subtropical gyre",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "-158.8575 23.4375, -158.8575 21.2283, -157.4567 21.2283, -157.4567 23.4375, -158.8575 23.4375"
+        },
+		"additionalProperty":[ {
+            "@type": "PropertyValue",
+            "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+            "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+        },
+       {
+            "@type": "PropertyValue",
+            "propertyID": "GPS Accuracy / Location error",
+            "value": "18",
+			"unitCode": "http://qudt.org/vocab/unit/M"
+        }
+          ]
+    },
+  "creator": [
+    {
+      "@id": "https://www.bco-dmo.org/person/51091",
+      "@type": "Role",
+      "roleName": "Principal Investigator",
+      "creator": {
+        "@id": "https://www.bco-dmo.org/person/51091",
+        "@type": "Person",
+        "name": "Dr Angelique White",
+        "givenName": "Angelique",
+        "familyName": "White",
+        "url": "https://www.bco-dmo.org/person/51091"
+      }
+    },
+    {
+      "@id": "https://www.bco-dmo.org/person/51683",
+      "@type": "Role",
+      "roleName": "Data Manager",
+      "creator": {
+        "@id": "https://www.bco-dmo.org/person/51683",
+        "@type": "Person",
+        "name": "Dr Lance Fujieki",
+        "givenName": "Lance",
+        "familyName": "Fujieki",
+        "url": "https://www.bco-dmo.org/person/51683"
+      }
+    }
+  ],
+  "provider": {
+    "@id": "https://www.bco-dmo.org/",
+    "@type": "Organization",
+    "legalName": "Biological & Chemical Oceanography Data Management Office",
+    "name": "BCO-DMO",
+    "url": "https://www.bco-dmo.org/"
+  },
+  "publisher": {
+    "@id": "https://www.bco-dmo.org/"
+  },
+  "funding": [
+    {
+      "@id": "http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0926766 ",
+      "@type": "MonetaryGrant",
+      "identifier": "OCE-0926766",
+      "name": "Collaborative Research: Nutritional Landscapes of Arctic Caribou: Observations, Experiments, and Models Provide Process-Level Understanding of Forage Traits and Trajectories",
+      "url": "http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0926766",
+      "funder": {
+        "@id": "http://dx.doi.org/10.13039/100000141",
+        "@type": "Organization",
+        "name": "National Science Foundation",
+        "identifier": [
+          "http://dx.doi.org/10.13039/100000141"
+        ]
+      }
+    }
+  ],
+  "license": "https://spdx.org/licenses/CC-BY-3.0",
+  "prov:wasRevisionOf": { "@id": "10.1575/1912/bco-dmo.3773.1"},
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Cruise",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849752",
+      "description": "Numeric cruise identifier for cruise of particular station visit."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EXPOCODE",
+      "alternateName":[
+        "CRUISE"
+      ],
+      "url":"https://www.bco-dmo.org/dataset-parameter/849753",
+      "description": "Cruise identifier for cruise of particular station visit. "
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WHPID",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849754",
+      "description": "WOCE Section code."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STNNBR",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849755",
+      "description": "Station identifier; a unique number or alphanumeric string designating a general geographic location at which one or more sampling activities may occur. Artficially created if not assigned by time-series station."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASTNO",
+      "alternateName":[
+        "CASTNO"
+      ],
+      "url":"https://www.bco-dmo.org/dataset-parameter/849756",
+      "description": "Numeric cast (profile) number of sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ROSETTE_POS",
+      "alternateName":[
+        "BTLNBR"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/ROSPOSID/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849765",
+      "description": "Bottle number of sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ISO_DateTime_UTC",
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/DTUT8601/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849757",
+      "description": "Date of sample in yyyy-mm-ddThh:mm:ssZ"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Latitude",
+      "alternateName":[
+        "LATITUDE"
+      ],
+      "propertyID":"https://vocab.nerc.ac.uk/collection/P01/current/ALATAA01/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849759",
+      "description": "Latitude where water samples were collected; north is positive. Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface to the equatorial plane",
+      "unitText": "decimal degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Longitude",
+      "alternateName":[
+        "LONGITUDE"
+      ],
+      "propertyID":"https://vocab.nerc.ac.uk/collection/P01/current/ALONZZ01/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849760",
+      "description": "Longitude where water samples were collected; east is positive.",
+      "unitText": "decimal degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDPRS",
+      "alternateName":[
+        "CTDPRS"
+      ],
+      "propertyID":"https://vocab.nerc.ac.uk/collection/P01/current/PRESPR01/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849766",
+      "description": "Water pressure at measurement; depth reported as pressure; positive number increasing with water depth.",
+      "unitText": "decibar (dbar)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDTMP",
+      "alternateName":[
+        "CTDTMP"
+      ],
+      "propertyID":"https://vocab.nerc.ac.uk/collection/P01/current/TEMPP901/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849767",
+      "description": "The degree of hotness at any position within a volume of fresh or salt water expressed against the International Temperature Scale 1990 (ITS-90) calibration standard.",
+      "unitText": "degree Celcius (degC)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDSAL",
+      "alternateName":[
+        "CTDSAL"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/PSALCC01/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849768",
+      "description": "CTD Salinity on PSS-78 scale",
+      "unitText": "Practical Salinity Unit (PSU)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT1(1)",
+      "alternateName":[
+        "CTDSAL_FLAG_W"
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdsal",
+      "description": "WOCE quality flag of CTDSAL."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDOXY",
+      "alternateName":[
+        "CTDOXY"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/DOXYSC01/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849769",
+      "description": "CTD Oxygen",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT1(2)",
+      "alternateName":[
+        "CTDOXY_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdoxy",
+      "description": "WOCE quality flag of CTDOXY."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SALINITY",
+      "alternateName":[
+        "SALNTY"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/PSALZZXX/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849772",
+      "description": "Bottle salinity of sample.",
+      "unitText": "Practical Salinity Unit (PSU)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT1(3)",
+      "alternateName":[
+        "SALNTY_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#salnty",
+      "description": "WOCE quality flag of bottle salinity."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OXYGEN",
+      "alternateName":[
+        "OXYGEN"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/DOXYZZXX/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849773",
+      "description": "Bottle oxygen concentration (Winkler) of sample.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT1(4)",
+      "alternateName":[
+        "OXYGEN_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#oxygen",
+      "description": "WOCE quality flag of bottle oxygen."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NO2_NO3",
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/MDMAP005/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849779",
+      "description": "Nitrate plus nitrite concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT2(3)",
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#nitrat",
+      "description": "Nitrate plus nitrite quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NO2",
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/MDMAP007/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849833",
+      "description": "Nitrite concentration per mass seawater",
+      "unitText": "nanomole per kilogram (nmol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT10(5)",
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#nitrit",
+      "description": "Nitrite quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PHSPHT",
+      "alternateName":[
+        "PHSPHT"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/MDMAP906/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849778",
+      "description": "Phosphate concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT2(2)",
+      "alternateName":[
+        "PHSPHT_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#phosphate",
+      "description": "Phosphate quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SILCAT",
+      "alternateName":[
+        "SILCAT"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/MDMAP012/",
+      "url": "https://www.bco-dmo.org/dataset-parameter/849780",
+      "description": "Silicate concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT2(4)",
+      "alternateName":[
+        "SILCAT_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#silcat",
+      "description": "Silicate quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DIC",
+      "alternateName":[
+        "TCARBN"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/TCO2MSXX/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849774",
+      "description": "Total dissolved inorganic carbon concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT1(5)",
+      "alternateName":[
+        "TCARBN_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#tcarbn",
+      "description": "Total dissolved inorganic carbon quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ALKALIN",
+      "alternateName":[
+        "ALKALI"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/MDMAP014/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849776",
+      "description": "Total alkalinity per mass seawater",
+      "unitText": "microequivalent  per kilogram (ueq/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT1(6)",
+      "alternateName":[
+        "ALKALI_FLAG_W",
+        "NA",
+        "TA_flag"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#alkali",
+      "description": "Total alkalinity quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pH",
+      "alternateName":[
+        "PH_TOT"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/PHTLSX25/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849775",
+      "description": "pH value of sample on total scale at 25°C and 0dbar"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT1(7)",
+      "alternateName":[
+        "PH_TOT_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#ph-tot",
+      "description": "ph quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },  
+    {
+      "@type": "PropertyValue",
+      "name": "PC",
+      "alternateName":[
+          "POC"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/MDMAP010/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849786",
+      "description": "Total particulate carbon concentration per mass seawater",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT3(3)",
+      "alternateName":[
+        "POC_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#poc",
+      "description": "Total particulate carbon quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },    
+    {
+      "@type": "PropertyValue",
+      "name": "PN",
+      "alternateName":[
+        "PON"
+      ],
+      "url":"https://www.bco-dmo.org/dataset-parameter/849787",
+      "description": "Total particulate nitrogen concentration per mass seawater",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT3(4)",
+      "alternateName":[
+        "PON_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#pon",
+      "description": "Total particulate nitrogen quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PP",
+      "alternateName":[
+        "POP"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/OPHSVLPT/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849788",
+      "description": "Total particulate phosphorus concentration per mass seawater",
+      "unitText": "nanomole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT3(5)",
+      "alternateName":[
+        "POP_FLAG_W"
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#pop",
+      "description": "Total particulate phosphorus quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOC",
+      "alternateName":[
+        "DOC"
+      ],
+      "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/CORGZZKG/1/",
+      "url":"https://www.bco-dmo.org/dataset-parameter/849783",
+      "description": "Dissolved organic carbon concentration per mass seawater",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "QUALT2(7)",
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#doc",
+      "description": "Dissolved organic carbon quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    }
+  ]
+}
