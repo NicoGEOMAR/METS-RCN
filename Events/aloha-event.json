@@ -48,21 +48,21 @@
             "description": "Karl, D. (2018) Niskin bottle water samples and CTD measurements from the Hawaii Ocean Time-Series cruises from 1988-2016 (HOT project). Biological and Chemical Oceanography Data Management Office (BCO-DMO). (Version 1) Version Date 2018-04-18 [if applicable, indicate subset used]. doi:10.1575/1912/bco-dmo.3773.1",
             "provider": [
                 {
-                    "@id": "https://oceanexpert.org/institution/8691",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/8691",
                     "legalName": "University of Hawaii at Manoa, Department of Oceanography",
                     "name": "University of Hawaii at Manoa, Department of Oceanography",
                     "url": "https://www.soest.hawaii.edu/"
                 },
                 {
-                    "@id": "https://orcid.org/0000-0002-0938-7948",
                     "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0002-0938-7948",
                     "legalName": "Angelique White",
                     "name": "Angelique White"
                 },
                 {
-                    "@id": "https://oceanexpert.org/institution/9783",
                     "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/9783",
                     "legalName": "Woods Hole Oceanographic Institution",
                     "name": "BCO-DMO",
                     "url": "https://www.bco-dmo.org/"
