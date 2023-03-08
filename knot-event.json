@@ -1,0 +1,1634 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "EventSeries",
+    "@id": "https://pidOfThisJsonLDdoc.org/",
+    "name": "KNOT Niskin Bottles",
+    "description":"Hydrographic measuremenst at the Kyodo North Pacific Ocean Time-series station (KNOT). The scientific focus of the program at KNOT is the seasonal carbon cycle.",
+    "url": "",
+    "keywords": [
+        "KNOT",
+        "hydrography",
+        "biogeochemical",
+        "Niskin"
+    ],
+    "startDate": "1997-01-01T00:00:00Z",
+    "endDate": "2012-12-31T00:00:00Z",
+    "location": {
+        "name": "KNOT",
+        "@type": "Place",
+        "description": "Western north Pacific Ocean subtropical gyre",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "154.5000 44.1000, 154.5000 43.8000, 155.2000 43.8000, 155.2000 44.1000, 154.5000 44.1000"
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "GPS Accuracy / Location error",
+                "value": "18",
+                "unitCode": "http://qudt.org/vocab/unit/M"
+            }
+        ]
+    },
+    "funder": ["Core Research for Evaluational Science and Technology (CREST) Program"],
+    "subjectOf": [
+        {
+            "@type": "Dataset",
+            "url": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/",
+            "identifier": "DOI:10.25921/tarq-6v91",
+            "description": "Waikita et al. (2012) Dissolved inorganic carbon, total alkalinity, temperature, salinity and other variables collected via time series monitoring from BOSEI MARU NO. 2, HAKUREI MARU and others in the North Pacific Ocean from 1992-06-23 to 2012-12-31",
+            "provider": [
+                {
+                    "@id": "https://oceanexpert.org/institution/11797",
+                    "@type": "Organization",
+                    "legalName": "Japan Agency for Marine-Earth Science and Technology",
+                    "name": "JAMSTEC",
+                    "url": "http://www.jamstec.go.jp/e/index.html"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0002-3333-0546",
+                    "@type": "Person",
+                    "legalName": "Masahide Wakita",
+                    "name": "Masahide Wakita"
+                },
+                {
+                    "@id": "https://oceanexpert.org/institution/17596",
+                    "@type": "Organization",
+                    "legalName": "NOAA NESDIS National Centers for Environmental Information",
+                    "name": "NCEI",
+                    "url": "https://www.ncei.noaa.gov/"
+                }
+            ]
+        }
+    ],
+    "citation": [
+        "http://www.mirc.jha.jp/CREST/KNOT/index.html"
+    ],
+    "contributor": [
+        "Masahide Waikita",
+        "Shuichi Watanabe",
+        "Akihiko Murata",
+        "Makio Honda",
+        "Nobuo Tsurushima"
+    ],   
+    "subevent": [
+        {
+            "@type": "Event",
+            "name": "HO92-2, HO95-2, HO97-3",
+            "description": "Station visits 1, 2 and 3: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Hokusei Maru"],
+            "startDate": "1992-06-23T00:00:00Z",
+            "endDate": "1997-07-14T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0001 44.0001, 155.0001 43.9999, 154.0009 43.9999, 154.0009 44.0001, 155.0001 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Shuichi Watanabe"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Visual Starch",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Spectrophotometer (manual)",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Spectrophotometer (manual)",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "MR97-K02, HO98-1, HO98-2, HO98-3, NH98, BO98-22, MR98-K01, MR99-K02",
+            "description": "Station visits 4 until 11: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Mirai", "R/V Hokusei Maru","R/V Bosei Maru","R/V Hakurei Maru II"],
+            "startDate": "1997-11-15T00:00:00Z",
+            "endDate": "1999-05-24T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "154.5000 44.0001, 154.5000 43.9999, 155.1000 43.9999, 155.1000 44.0001, 154.5000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Masashi Kusakabe",
+                "Makio Honda",
+                "Fumiyasu Nishibori",
+                "Shuichi Watanabe",
+                "Nobuo Tsurushima"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4 in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "KA99-01",
+            "description": "Station visits 12: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Kaiyo Maru"],
+            "startDate": "1999-05-26T00:00:00Z",
+            "endDate": "1999-05-27T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0001 44.1001, 155.0001 44.0999, 154.9999 44.0999, 154.9999 44.1001, 155.0001 44.1001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Improved single endpoint"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "HO99-1, HO99-2, HO99-3, NH99, BO99-22",
+            "description": "Station visits 13 until 17: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Mirai", "R/V Hokusei Maru","R/V Bosei Maru"],
+            "startDate": "1999-06-05T00:00:00Z",
+            "endDate": "1999-10-19T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0000 44.0001, 155.0000 43.9999, 154.9000 43.9999, 154.9000 44.0001, 155.0000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Masashi Kusakabe",
+                "Makio Honda",
+                "Fumiyasu Nishibori",
+                "Shuichi Watanabe",
+                "Nobuo Tsurushima"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "MR00-K01, MR00-K03, HO00-1, HO00-2",
+            "description": "Station visits 18 until 21: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Mirai","R/V Hakurei Maru II"],
+            "startDate": "2000-01-17T00:00:00Z",
+            "endDate": "2000-06-26T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0000 44.0001, 155.0000 43.9999, 154.9000 43.9999, 154.9000 44.0001, 155.0000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Masashi Kusakabe",
+                "Makio Honda",
+                "Shuichi Watanabe"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "HO00-3B",
+            "description": "Station visits 22: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Kaiyo Maru"],
+            "startDate": "2000-07-31T00:00:00Z",
+            "endDate": "2000-08-01T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0001 44.0001, 155.0001 43.9999, 154.9999 43.9999, 154.9999 44.0001, 155.0001 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Shuichi Watanabe"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Improved single endpoint",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "BO00-21",
+            "description": "Station visit 23: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Bosei Maru"],
+            "startDate": "2000-10-13T00:00:00Z",
+            "endDate": "2000-10-18T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0000 44.0001, 155.0000 43.9999, 154.9000 43.9999, 154.9000 44.0001, 155.0000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Nobuo Tsurushima"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4 in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "HO01-1",
+            "description": "Station visit 24: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Hokusei Maru"],
+            "startDate": "2001-06-04T00:00:00Z",
+            "endDate": "2001-06-05T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0000 44.0001, 155.0000 43.9999, 154.9000 43.9999, 154.9000 44.0001, 155.0000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Masahide Wakita"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "MR01-K03",
+            "description": "Station visit 25: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Mirai"],
+            "startDate": "2001-06-07T00:00:00Z",
+            "endDate": "2001-06-25T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0000 44.0001, 155.0000 43.9999, 154.9000 43.9999, 154.9000 44.0001, 155.0000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Shuichi Watanabe"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4 in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "HO01-3A, OS02-01",
+            "description": "Station visit 26, 27: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Hokusei Maru","Oshoro Maru"],
+            "startDate": "2001-07-12T00:00:00Z",
+            "endDate": "2002-06-13T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0000 44.0001, 155.0000 43.9999, 154.9000 43.9999, 154.9000 44.0001, 155.0000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Masahide Wakita",
+                "Yutaka W. Watanabe"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Improved single endpoint",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "MR03-K01, OS-133, OS-135, OS-136, NT03-07, OS-137, KH03-2, MR04-02, NT04-05, MR04-04, MR04-06, MR05-01, MR05-04, MR06-03",
+            "description": "Station visit 28 until 41: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Mirai", "R/V Hokusei Maru", "R/V Oshoro Maru", "R/V Natsushima", "R/V Hakuho Maru"],
+            "startDate": "2003-02-23T00:00:00Z",
+            "endDate": "2006-07-18T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.0000 44.0001, 155.0000 43.9999, 154.9000 43.9999, 154.9000 44.0001, 155.0000 44.0001"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Masahide Wakita",
+                "Yutaka W. Watanabe",
+                "Akihiko Murata",
+                "Shuichi Watanabe",
+                "Nobuo Tsurushima",
+                "Makio Honda "
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4 in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "MR07-01, MR07-05, MR08-05, MR10-01, MR10-06, MR11-03, MR11-05, MR12-02",
+            "description": "Station visit 42 until 49: Hydrographic measurements at KNOT station",
+            "instrument": ["R/V Mirai"],
+            "startDate": "2007-03-20T00:00:00Z",
+            "endDate": "2012-06-18T00:00:00Z",
+            "location": {
+                "name": "KNOT",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "155.2000 44.0010, 155.2000 43.8000, 154.9960 43.8000, 154.9960 44.0010, 155.2000 44.0010"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Masahide Wakita"
+            ],
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Standard:OSIL"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 751 GPD Titrino",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "Carpenter",
+                    "Draw Temperature",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "KANSO"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "KANSO"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "KANSO"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "QuAAtro Continous Flow Autonalyzer (Bran Luebbe)",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "KANSO"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4 in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC coulometer",
+                "object":[
+                    "Coulemetry",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Nippon ANS",
+                "object":[
+                    "Spectrophotometric",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0100219/"
+                ]
+            }]
+        }
+    ]
+}

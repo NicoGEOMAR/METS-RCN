@@ -1,0 +1,441 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "EventSeries",
+    "@id": "https://pidOfThisJsonLDdoc.org/",
+    "name": "RADCOR Niskin Bottles",
+    "description":"Hydrographic measuremenst at all three stations of A Coruñna RADIALES (RADCOR). The overarching RADIALES program consists on monthly multidisciplinary perpendicular sections covering the Cantabrian Sea and northwest coastal and neritic Spanish ocean.",
+    "url": "",
+    "keywords": [
+        "RADCOR",
+        "hydrography",
+        "biogeochemical",
+        "Niskin"
+    ],
+    "startDate": "1989-01-01T00:00:00Z",
+    "endDate": "2020-12-31T00:00:00Z",
+    "location": {
+        "name": "RADCOR",
+        "@type": "Place",
+        "description": "NW Galician coast",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "43.4217 -8.4367, 43.3633 -8.4367, 43.3633 -8.3700, 43.4217 -8.3700, 43.4217 -8.4367"
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "GPS Accuracy / Location error",
+                "value": "18",
+                "unitCode": "http://qudt.org/vocab/unit/M"
+            }
+        ]
+    },
+    "funder": ["Spanish Institute of Oceanography (IEO)"],
+    "citation": [
+        "https://www.seriestemporales-ieo.net/index.php"
+    ],
+    "contributor": [
+        "Marta Álvarez",
+        "Antonio Bode"
+    ],   
+    "subevent": [
+        {
+            "@type": "Event",
+            "name": "29LU20130109 until 29LU20130627",
+            "description": "Hydrographic measurements at RADCOR_2, RADCOR_3 and RADCOR_4 until June 2013",
+            "instrument": ["R/V Lura"],
+            "startDate": "2013-01-01T00:00:00Z",
+            "endDate": "2013-06-30T00:00:00Z",
+            "location": {
+                "name": "RADCOR",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "43.4217 -8.4367, 43.3633 -8.4367, 43.3633 -8.3700, 43.4217 -8.3700, 43.4217 -8.4367"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm Titrando system",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon - Bran Luebbe AAIII",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrite",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon - Bran Luebbe AAIII",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrite concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon - Bran Luebbe AAIII",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon - Bran Luebbe AAIII",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "29LU20130718 until 29LU20150421",
+            "description": "Hydrographic measurements at RADCOR_2, RADCOR_3 and RADCOR_4 from July 2013 until April 2015",
+            "instrument": ["R/V Lura"],
+            "startDate": "2013-07-01T00:00:00Z",
+            "endDate": "2015-04-30T00:00:00Z",
+            "location": {
+                "name": "RADCOR",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "43.4217 -8.4367, 43.3633 -8.4367, 43.3633 -8.3700, 43.4217 -8.3700, 43.4217 -8.4367"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm Titrando system",
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrite",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrite concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric",
+                    "open cell",
+                    "curve fitting method: non-linear least-squares",
+                    "CRM",
+                    "poisoned"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of pH",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SHIMADZU UV2600",
+                "object":[
+                    "Spectrophotometric",
+                    "total scale",
+                    "25°C",
+                    "Indicator dye: m-cresol purple (2mM Sigma Aldrich)",
+                    "Clayton and Byrne, 1993"
+                ],
+                "result":[
+                    "pH value"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "29LU20130718 until 29LU20201110",
+            "description": "Hydrographic measurements at RADCOR_2, RADCOR_3 and RADCOR_4 from May 2015",
+            "instrument": ["R/V Lura"],
+            "startDate": "2015-05-01T00:00:00Z",
+            "endDate": "2020-11-30T00:00:00Z",
+            "location": {
+                "name": "RADCOR",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "43.4217 -8.4367, 43.3633 -8.4367, 43.3633 -8.3700, 43.4217 -8.3700, 43.4217 -8.4367"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": [
+                    "Metrohm Titrando system",
+                    "Metrohm Dosino"
+                ],
+                "object":[
+                    "Winkler",
+                    "End-Point detection: Potentiometric",
+                    "CSK"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrite",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrite concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL Analytical QuAAtro",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Reference material: KANSO",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": [
+                    "Marianda Company VINDTA 3D system",
+                    "UIC5011 coulometer"
+                ],
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Titration: Potentiometric",
+                    "open cell",
+                    "curve fitting method: non-linear least-squares",
+                    "CRM",
+                    "poisoned"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of pH",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SHIMADZU UV2600",
+                "object":[
+                    "Spectrophotometric",
+                    "total scale",
+                    "25°C",
+                    "Indicator dye: m-cresol purple (2mM Sigma Aldrich)",
+                    "Clayton and Byrne, 1993"
+                ],
+                "result":[
+                    "pH value"
+                ]
+            }]
+        }
+    ]
+}
