@@ -1,0 +1,1375 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Time-Series Data Synthesis Product",
+  "description": "Synthesis of ship-based biogeochemical time-series stations.",
+  "url": "",
+  "sameAs": "https://www2.whoi.edu/site/mets-rcn/",
+  "version": "2022-03-01",
+  "keywords": ["ALOHA", "CARIACO","KNOT","K2","CVOO","Munida","RADCO","GIFT","DYFAMED","IrmingerSea","IcelandSea","OWSM", "Niskin Bottles", "Biogeochemistry"],
+  "isBasedOn": [
+    {
+    "@type": "Dataset",
+    "name": "ALOHA dataset niskin bottle (look at doi )",
+    "publisher": "Biological and Chemical Oceanography Data Management Office",
+    "identifier": "https://doi.org/10.1575/1912/bco-dmo.3773.1"
+    },
+    {  
+      "@type": "Dataset",
+      "name": "DOI: 10.1575/1912/bco-dmo.3093.1",
+      "publisher": "Biological and Chemical Oceanography Data Management Office",
+      "url": "https://doi.org/10.1575/1912/bco-dmo.3093.1"
+    },
+    { 
+      "@type": "Dataset",
+      "name": "DOI: 10.25921/tarq-6v91",
+      "publisher": "National Center for Environmental Information",
+      "url": "https://doi.org/10.25921/tarq-6v91"
+    },
+    { 
+      "@type": "Dataset",
+      "name": "DOI: 10.25921/mpfz-sv16",
+      "publisher": "National Center for Environmental Information",
+      "url": "https://doi.org/10.25921/mpfz-sv16"
+    },
+    { 
+      "@type": "Dataset",
+      "name": "DOI: 10.20350/digitalCSIC/10549",
+      "publisher": "Instituto de Ciencias Marinas de Andalucía",
+      "url": "https://doi.org/10.20350/digitalCSIC/10549"
+    },
+    {
+      "@type": "Dataset",
+      "name": "DOI: 10.17882/43749",
+      "publisher": "Mediterranean ocean observing system for the environment",
+      "url": "https://doi.org/10.17882/43749"
+    },
+    {
+      "@type": "Dataset",
+      "name": "DOI: 10.25921/vjmy-8h90",
+      "publisher": "National Center for Environmental Information",
+      "url": "https://doi.org/10.25921/vjmy-8h90"
+    },
+    {
+      "@type": "Dataset",
+      "name": "DOI: 10.3334/cdiac/otg.carina_irmingersea_v2",
+      "publisher": "National Center for Environmental Information",
+      "url": "https://doi.org/10.3334/cdiac/otg.carina_irmingersea_v2"
+    },
+    {
+      "@type": "Dataset",
+      "name": "DOI: 10.25921/qhed-3h84",
+      "publisher": "National Center for Environmental Information",
+      "url": "https://doi.org/10.25921/qhed-3h84"
+    },
+    {
+      "@type": "Dataset",
+      "name": "DOI: 10.3334/cdiac/otg.carina_icelandsea",
+      "publisher": "National Center for Environmental Information",
+      "url": "https://doi.org/10.3334/cdiac/otg.carina_icelandsea"
+    },
+    {
+      "@type": "Dataset",
+      "name": "DOI: 10.3334/cdiac/otg_tsm_ows_m_66n_2e",
+      "publisher": "National Center for Environmental Information",
+      "url": "https://doi.org/10.3334/cdiac/otg_tsm_ows_m_66n_2e"
+    }
+  ],
+  "about": 
+  [{
+    "@type":"Event",
+    "name": "HOT ALOHA Niskin Bottles",
+    "description": "Monthly measurements of the thermohaline structure, water column chemistry, and primary production were collected at station ALOHA as part of the HOT program.",
+    "startDate": "1988-10-31T00:56:00Z",
+    "endDate": "2019-12-20T08:51:00Z"
+  },
+  {
+    "@type":"Event",
+    "name": "CARIACO Niskin Bottles",
+    "description": "Monthly measurements of CTD and in-situ Niskin-bottles samples for chemical observations, and for productivity, phytoplankton, and pigment observations at station CARIACO.",
+    "startDate": "1995-11-08T00:00:00Z",
+    "endDate": "2017-01-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "KNOT Niskin Bottles",
+      "description": "Irregular quasi-seasonal measurements of CTD and in-situ Niskin-bottles samples for chemical observations at station KNOT.",
+      "startDate": "1992-01-01T00:00:00Z",
+      "endDate": "2012-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "K2 Niskin Bottles",
+      "description": "Irregular quasi-seasonal measurements of CTD and in-situ Niskin-bottles samples for chemical observations at station K2.",
+      "startDate": "1999-01-01T00:00:00Z",
+      "endDate": "2012-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "CVOO Niskin Bottles",
+      "description": "Irregular quasi-seasonal measurements of CTD and in-situ Niskin-bottles samples for chemical observations at station CVOO.",
+      "startDate": "2006-01-01T00:00:00Z",
+      "endDate": "2019-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "Munida Niskin Bottles",
+      "description": "Bi-monthly measurements of CTD and in-situ Niskin-bottles samples for chemical observations at the deep station of the Munida transect.",
+      "startDate": "1998-01-01T00:00:00Z",
+      "endDate": "2019-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "RADCO Niskin Bottles",
+      "description": "Monthly measurements of CTD and in-situ Niskin-bottles samples for chemical observations at the RADCO stations near A Coruna as part of the RADIALES program.",
+      "startDate": "1989-01-01T00:00:00Z",
+      "endDate": "2020-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "GIFT Niskin Bottles",
+      "description": "Seasonal measurements of CTD and in-situ Niskin-bottles samples for chemical observations at the GIFT transect.",
+      "startDate": "2005-01-01T00:00:00Z",
+      "endDate": "2015-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "DYFAMED Niskin Bottles",
+      "description": "Monthly measurements of CTD and in-situ Niskin-bottles samples for chemical observations at the DYFAMED station.",
+      "startDate": "1991-01-01T00:00:00Z",
+      "endDate": "2017-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "IrmingerSea Time-Series Niskin Bottles",
+      "description": "Seasonal measurements of CTD and in-situ Niskin-bottles samples for chemical observations at the IrmingerSea time-series station.",
+      "startDate": "1983-01-01T00:00:00Z",
+      "endDate": "2019-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "IcelandSea Time-Series Niskin Bottles",
+      "description": "Seasonal measurements of CTD and in-situ Niskin-bottles samples for chemical observations at the IcelandSea time-series station.",
+      "startDate": "1983-01-01T00:00:00Z",
+      "endDate": "2019-12-31T00:00:00Z"
+    },
+    {
+      "@type":"Event",
+      "name": "OWSM Niskin Bottles",
+      "description": "Monthly measurements of CTD and in-situ Niskin-bottles samples for chemical observations at OWSM.",
+      "startDate": "2001-01-01T00:00:00Z",
+      "endDate": "2021-12-31T00:00:00Z"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "datePublished": "",
+  "identifier": {
+    "@id": "",
+    "@type": "PropertyValue",
+    "name": "DOI:",
+    "propertyID": "https://registry.identifiers.org/registry/doi",
+    "value": "",
+    "url": "https://doi.org/"
+  },
+  "citation": "Lange et al. (2023): A ship-based biogeochemical time-series data product",
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "",
+    "encodingFormat": "comma-seperated"
+  },
+  "temporalCoverage": "1983-01-01/2021-12-31",
+  "location": {
+		"name": "Station locations worldwide",
+        "@type": "Place",
+		"description": "Global",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": ["-180 -90, -180 90, 180 90, 180 -90, -180 -90",""]
+        },
+		"additionalProperty":[ 
+      {
+            "@type": "PropertyValue",
+            "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+            "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+      },
+      {
+            "@type": "PropertyValue",
+            "propertyID": "GPS Accuracy / Location error",
+            "value": "18",
+			      "unitCode": "http://qudt.org/vocab/unit/M"
+       }
+    ]
+    },
+  "creator": [
+    {
+      "@type": "Role",
+      "roleName": "Contact",
+      "creator": {
+        "@type": "Person",
+        "name": "Nico Lange",
+        "givenName": "Nico",
+        "familyName": "Lange",
+        "url": ""
+      }
+    }
+  ],
+  "provider": {
+    "@id": "https://www.bco-dmo.org/",
+    "@type": "Organization",
+    "legalName": "Biological & Chemical Oceanography Data Management Office",
+    "name": "BCO-DMO",
+    "url": "https://www.bco-dmo.org/"
+  },
+  "publisher": {
+    "@id": "https://www.bco-dmo.org/"
+  },
+  "funding": [
+    {
+      "@type": "MonetaryGrant",
+      "identifier": "862626",
+      "name": "EuroSea Project",
+      "url": "http://dx.doi.org/10.3030/862626",
+      "funder": {
+        "@type": "Organization",
+        "identifier": "https://cordis.europa.eu/programme/id/H2020-EU.3.2.",
+        "name": "H2020-EU.3.2. - SOCIETAL CHALLENGES - Food security, sustainable agriculture and forestry, marine, maritime and inland water research, and the bioeconomy "
+      }
+    }
+  ],
+  "license": "https://spdx.org/licenses/CC-BY-3.0",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "TimeSeriesSite",
+      "description": "List abbrevations (or names) of the time-series stations."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CRUISE",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/dataset-parameter",
+            "termCode": "849752",
+            "name": "cruise_id",
+            "url": "https://www.bco-dmo.org/dataset-parameter/849752"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "termCode": "Cruise_ID",
+            "name": "Cruise_ID"
+        }
+      ],
+      "description": "Cruise identifier for cruise of particular station visit. Not consistently defined across the time-series stations."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "STNNBR",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849755",
+            "name": "station",
+            "ulr":"https://www.bco-dmo.org/search/parameter/849755"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Station_ID"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#stnnbr",
+      "description": "Station identifier; a unique number or alphanumeric string designating a general geographic location at which one or more sampling activities may occur. Artficially created if not assigned by time-series station."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CASTNO",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849756",
+            "name": "Cast",
+            "url":"https://www.bco-dmo.org/search/parameter/849756"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Cast_number"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#castno",
+      "description": "Numeric cast (profile) number of sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "BTLNBR",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "ROSPOSID",
+            "name": "RosPos",
+            "url":"http://vocab.nerc.ac.uk/collection/P01/current/ROSPOSID"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849765",
+            "name": "bot",
+            "url":"https://www.bco-dmo.org/search/parameter/849765"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Niskin_ID"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#btlnbr",
+      "description": "Bottle number of sample."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATE",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "ADATAA01",
+            "name": "Date",
+            "url":"http://vocab.nerc.ac.uk/collection/P01/current/ADATAA01"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#date",
+      "description": "Date of sample in yyyymmdd."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TIME",
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#time",
+      "description": "Time of sampling (utc, hhmm)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LATITUDE",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "ALATAA01",
+            "name": "Latitude north",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/ALATAA01"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849759",
+            "name": "lat",
+            "url":"https://www.bco-dmo.org/search/parameter/849759"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Latitude"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#latitude",
+      "description": "Latitude where water samples were collected; north is positive. Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface to the equatorial plane",
+      "unitText": "decimal degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LONGITUDE",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "ALONZZ01",
+            "name": "Longitude east",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/ALONZZ01"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849760",
+            "name": "lon",
+            "url": "https://www.bco-dmo.org/search/parameter/849760"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Longitude"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#longitude",
+      "description": "Longitude where water samples were collected; east is positive.",
+      "unitText": "decimal degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDPRS",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "PRESPR01",
+            "name": "Pres_Z",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/PRESPR01"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849766",
+            "name": "press",
+            "url": "https://www.bco-dmo.org/search/parameter/849766"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "CTDPRES"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdprs",
+      "description": "Water pressure at measurement; depth reported as pressure; positive number increasing with water depth.",
+      "unitText": "decibar (dbar)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SIGMA0",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849771",
+            "name": "sigma_0",
+            "url":"https://www.bco-dmo.org/search/parameter/849771"
+        }
+      ],
+      "description": "Potential Density at 0dbar of sample.",
+      "unitText": "kilogram per cubic meter (kg/m^3)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDTMP",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "TEMPP901",
+            "name": "WC_temp90",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/TEMPP901"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849767",
+            "name": "temp",
+            "url": "https://www.bco-dmo.org/search/parameter/849767"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "CTDTEMP_ITS90"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdtmp",
+      "description": "The degree of hotness at any position within a volume of fresh or salt water expressed against the International Temperature Scale 1990 (ITS-90) calibration standard.",
+      "unitText": "degree Celcius (degC)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDSAL",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "PSALCC01",
+            "name": "P_sal_CTD_calib",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/PSALCC01"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849768",
+            "name": "sal",
+            "url": "https://www.bco-dmo.org/search/parameter/849768"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "CTDSAL_PSS78"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdsal",
+      "description": "CTD Salinity on PSS-78 scale",
+      "unitText": "Practical Salinity Unit (PSU)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDSAL_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "CTDSAL_flag"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdsal",
+      "description": "WOCE quality flag of CTDSAL."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDOXY",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "DOXYSC01",
+            "name": "WC_dissO2_calib",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/DOXYSC01"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849769",
+            "name": "O2",
+            "url": "https://www.bco-dmo.org/search/parameter/849769"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "CTDOXY"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdoxy",
+      "description": "CTD Oxygen",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CTDOXY_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "CTDSAL_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdoxy",
+      "description": "WOCE quality flag of CTDOXY."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SALNTY",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "PSALZZXX",
+            "name": "P_sal",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/PSALZZXX"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849772",
+            "name": "sal_bot",
+            "url": "https://www.bco-dmo.org/search/parameter/849772"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Salinity"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#salnty",
+      "description": "Bottle salinity of sample.",
+      "unitText": "Practical Salinity Unit (PSU)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SALNTY_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "Salinity_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#salnty",
+      "description": "WOCE quality flag of bottle salinity."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SALNTY_BPf",
+      "description": "Best-Pratice flag of bottle salinity."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SALNTY_P",
+      "description": "Precision of bottle salinity based on replicate measurements.",
+      "unitText": "Practical Salinity Unit (PSU)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SALNTY_A",
+      "description": "Accuracy of bottle salinity based on CRM measurements.",
+      "unitText": "Practical Salinity Unit (PSU)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OXYGEN",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "DOXYZZXX",
+            "name": "WC_dissO2",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/DOXYZZXX"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849773",
+            "name": "O2",
+            "url": "https://www.bco-dmo.org/search/parameter/849773"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Oxygen"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#oxygen",
+      "description": "Bottle oxygen concentration (Winkler) of sample.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OXYGEN_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "Oxygen_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#oxygen",
+      "description": "WOCE quality flag of bottle oxygen."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OXYGEN_BPf",
+      "description": "Best-Pratice flag of bottle oxygen."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OXYGEN_P",
+      "description": "Precision of bottle oxygen based on replicate measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "OXYGEN_A",
+      "description": "Accuracy of bottle oxygen based on CRM measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRAT",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "MDMAP005",
+            "name": "NO3/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP005"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "1194",
+            "name": "NO3_NO2",
+            "url": "https://www.bco-dmo.org/search/parameter/1194"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Nitrate"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#nitrat",
+      "description": "Nitrate concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRAT_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "Nitrate_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#nitrat",
+      "description": "Nitrate quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRAT_BPf",
+      "description": "Nitrate Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRAT_A",
+      "description": "Nitrate accuracy based on comparisons to reference material.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRAT_P",
+      "description": "Nitrate precision based on replicate measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRIT",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "MDMAP007",
+            "name": "NO2/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP007"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Nitrite"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#nitrit",
+      "description": "Nitrite concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRIT_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "Nitrite_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#nitrit",
+      "description": "Nitrite quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRIT_BPf",
+      "description": "Nitrite Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRIT_A",
+      "description": "Nitrite accuracy based on comparisons to reference material.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NITRIT_P",
+      "description": "Nitrite precision based on replicate measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PHSPHT",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "MDMAP906",
+            "name": "PO4/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP906"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849778",
+            "name": "PO4",
+            "url": "https://www.bco-dmo.org/search/parameter/849778"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Phosphate"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#phspht",
+      "description": "Phosphate concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PHSPHT_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "Phosphate_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#phosphate",
+      "description": "Phosphate quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PHSPHT_BPf",
+      "description": "Phosphate Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PHSPHT_A",
+      "description": "Phosphate accuracy based on comparisons to reference material.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PHSPHT_P",
+      "description": "Phosphate precision based on replicate measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SILCAT",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "MDMAP012",
+            "name": "SiOx/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP012"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849780",
+            "name": "SiO4",
+            "url": "https://www.bco-dmo.org/search/parameter/849780"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Silicate"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#silcat",
+      "description": "Silicate concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SILCAT_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "Silicate_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#silcat",
+      "description": "Silicate quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SILCAT_BPf",
+      "description": "Silicate Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SILCAT_A",
+      "description": "Silicate accuracy based on comparisons to reference material.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SILCAT_P",
+      "description": "Silicate precision based on replicate measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NH4",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "MDMAP004",
+            "name": "NH4/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP004"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "Ammonium"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#nh4",
+      "description": "Ammonium concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NH4_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "Ammonium_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#nh4",
+      "description": "Ammonium quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NH4_BPf",
+      "description": "Ammonium Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NH4_A",
+      "description": "Ammonium accuracy based on comparisons to reference material.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NH4_P",
+      "description": "Ammonium precision based on replicate measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TCARBN",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "TCO2MSXX",
+            "name": "TCO2/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/TCO2MSXX"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849774",
+            "name": "DIC",
+            "url": "https://www.bco-dmo.org/search/parameter/849774"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "DIC"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#tcarbn",
+      "description": "Total dissolved inorganic carbon concentration per mass seawater",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TCARBN_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "DIC_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#tcarbn",
+      "description": "Total dissolved inorganic carbon quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TCARBN_BPf",
+      "description": "Total dissolved inorganic carbon Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TCARBN_A",
+      "description": "Total dissolved inorganic carbon accuracy based on comparisons to reference material.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TCARBN_P",
+      "description": "Total dissolved inorganic carbon precision based on replicate measurements.",
+      "unitText": "micromole per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ALKALI",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "MDMAP014",
+            "name": "TotAlk/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP014"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849776",
+            "name": "TALK",
+            "url": "https://www.bco-dmo.org/search/parameter/849776"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "TA"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#alkali",
+      "description": "Total alkalinity per mass seawater",
+      "unitText": "microequivalent  per kilogram (ueq/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ALKALI_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "TA_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#alkali",
+      "description": "Total alkalinity quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ALKALI_BPf",
+      "description": "Total alkalinity Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ALKALI_A",
+      "description": "Total alkalinity accuracy based on comparisons to reference material.",
+      "unitText": "microequivalent  per kilogram (ueq/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ALKALI_P",
+      "description": "Total alkalinity precision based on replicate measurements.",
+      "unitText": "microequivalent  per kilogram (ueq/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PH_TOT",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "PHTLSX25",
+            "name": "pH(Total)_25deg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/PHTLSX25"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849775",
+            "name": "ph",
+            "url": "https://www.bco-dmo.org/search/parameter/849775"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "pH_T_measured"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ph-tot",
+      "description": "pH value of sample on total scale at 25°C and 0dbar"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PH_TOT_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "pH_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#ph-tot",
+      "description": "ph quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PH_TOT_BPf",
+      "description": "pH Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PH_TOT_A",
+      "description": "pH accuracy based on comparisons to reference material."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PH_TOT_P",
+      "description": "pH precision based on replicate measurements."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PCO2",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "PCO2XXXX",
+            "name": "pCO2",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/PCO2XXXX"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849777",
+            "name": "pCO2",
+            "url": "https://www.bco-dmo.org/search/parameter/849777"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#pco2",
+      "description": "Partial pressure of carbon dioxide",
+      "unitText": "microatmospheres (uatm)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PCO2_TMP",
+      "description": "pCO2 sample temperature",
+      "unitText": "degree Celcius (degC)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PCO2_FLAG_W",
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#pco2",
+      "description": "Partial pressure of carbon dioxide quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PCO2_BPf",
+      "description": "pCO2 Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PCO2_A",
+      "description": "pCO2 accuracy based on comparisons to reference material.",
+      "unitText": "microatmospheres (uatm)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PCO2_P",
+      "description": "pCO2 precision based on replicate measurements.",
+      "unitText": "microatmospheres (uatm)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POC",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "MDMAP010",
+            "name": "POC",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/MDMAP010"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849786",
+            "name": "TPC",
+            "url": "https://www.bco-dmo.org/search/parameter/849786"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#poc",
+      "description": "Total (organic) particulate carbon concentration per mass seawater",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POC_FLAG_W",
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#poc",
+      "description": "Total (organic) particulate carbon quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POC_BPf",
+      "description": "Total (organic) particulate carbon Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POC_A",
+      "description": "Total (organic) particulate carbon accuracy based on comparisons to reference material.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POC_P",
+      "description": "Total (organic) particulate carbon precision based on replicate measurements.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PON",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849787",
+            "name": "TPN",
+            "url": "https://www.bco-dmo.org/search/parameter/849787"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#pon",
+      "description": "Total (organic) particulate nitrogen concentration per mass seawater",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PON_FLAG_W",
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#pon",
+      "description": "Total (organic) particulate nitrogen quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PON_BPf",
+      "description": "Total (organic) particulate nitrogen Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PON_A",
+      "description": "Total (organic) particulate nitrogen accuracy based on comparisons to reference material.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PON_P",
+      "description": "Total (organic) particulate nitrogen precision based on replicate measurements.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POP",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "OPHSVLPT",
+            "name": "POP",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/OPHSVLPT"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849788",
+            "name": "TPP",
+            "url": "https://www.bco-dmo.org/search/parameter/849788"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#pop",
+      "description": "Total (organic) particulate phosphorus concentration per mass seawater",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POP_FLAG_W",
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#pop",
+      "description": "Total (organic) particulate phosphorus quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POP_BPf",
+      "description": "Total (organic) particulate phosphorus Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POP_A",
+      "description": "Total (organic) particulate phosphorus accuracy based on comparisons to reference material.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POP_P",
+      "description": "Total (organic) particulate phosphorus precision based on replicate measurements.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOC",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+            "termCode": "CORGZZKG",
+            "name": "DOC/kg",
+            "url": "http://vocab.nerc.ac.uk/collection/P01/current/CORGZZKG/1/"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+            "termCode": "849783",
+            "name": "DOC",
+            "url": "https://www.bco-dmo.org/search/parameter/849783"
+        },
+        {
+          "@type": "DefinedTerm",
+            "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+            "name": "DOC"
+        }
+      ],
+      "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#doc",
+      "description": "Dissolved organic carbon concentration per mass seawater",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOC_FLAG_W",
+      "alternateName":[
+        {
+          "@type": "DefinedTerm",
+          "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+          "name": "DOC_flag"
+        }
+      ],
+      "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#doc",
+      "description": "Dissolved organic carbon quality flag; based on a PI established code; identifies a problem/quality issue with sample(s) from a given water bottle or single observation"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOC_BPf",
+      "description": "Dissolved organic carbon Best-Practice Flag: Indicates the extent to which Best-Practices have been followed (Lange et al. 2023)."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOC_A",
+      "description": "Dissolved organic carbon accuracy based on comparisons to reference material.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOC_P",
+      "description": "Dissolved organic carbon precision based on replicate measurements.",
+      "unitText": "micromole  per kilogram (umol/kg)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DOI",
+      "description": "Digital Object Identifier of original time-series dataset"
+    }
+  ]
+}
