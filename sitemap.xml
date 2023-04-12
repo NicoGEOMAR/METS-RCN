@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/aloha-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/cariaco-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/cvoo-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/dyfamed-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/gift-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/IRM-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/IC-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/k2-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/knot-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/munida-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/owsm-event.json</loc>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Events/radcor-event.json</loc>
+  </url>
+</urlset>
+
