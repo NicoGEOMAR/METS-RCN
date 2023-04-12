@@ -300,6 +300,15 @@
                                     "name": "Net Angle",
                                     "value": "oblique"
                                 }
+                             "additionalProperty": {
+                             "@type": "HowTo",
+                             "name": "Papermethodname",
+                             "identifier": "DOI",
+                             "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
+                             "tool": [
+                                   "Folsom Splitter"
+                            ]
+                    },
                             ]
                         }
                     ],
@@ -314,20 +323,10 @@
                     "@type": "Action",
                     "name": "Determination of the wet weight of mesozooplankton",
                     "actionStatus": "CompletedActionStatus",
-                    "instrument": "CHN element analyzer",
+                    "instrument": "Scale",
                     "object": [
                         "Size-fractioned zooplankton distribution"
                     ],
-                    "additionalProperty": {
-                        "@type": "HowTo",
-                        "name": "Papermethodname",
-                        "identifier": "DOI",
-                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
-                        "tool": [
-                            "Todo:SplittingMethodTool",
-                            "Todo:PreservationTechniqueTool"
-                        ]
-                    },
                     "result": [
                         "wet weight of mesozooplankton per seawatar mass",
                         "Todo: Column title  Wet Wgt in ####"
@@ -337,20 +336,10 @@
                     "@type": "Action",
                     "name": "Determination of the dry weight of mesozooplankton",
                     "actionStatus": "CompletedActionStatus",
-                    "instrument": "CHN element analyzer",
+                    "instrument": "Scale",
                     "object": [
-                        "Size-fractioned zooplankton distribution"
+                        "Frozen Size-fractioned zooplankton distribution"
                     ],
-                    "additionalProperty": {
-                        "@type": "HowTo",
-                        "name": "Papermethodname",
-                        "identifier": "DOI",
-                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
-                        "tool": [
-                            "Todo:SplittingMethodTool",
-                            "Todo:PreservationTechniqueTool"
-                        ]
-                    },
                     "result": [
                         "Dry weight of mesozooplankton per seawatar mass",
                         "Todo: Column title  Wet Wgt in ####"
@@ -358,11 +347,11 @@
                 },
                 {
                     "@type": "Action",
-                    "name": "Determination of the nitrogen wet weight of mesozooplankton",
+                    "name": "Determination of the nitrogen dry weight of mesozooplankton",
                     "actionStatus": "CompletedActionStatus",
                     "instrument": "CHN element analyzer",
                     "object": [
-                        "Size-fractioned zooplankton distribution"
+                        "Frozen Size-fractioned zooplankton distribution"
                     ],
                     "additionalProperty": {
                         "@type": "HowTo",
