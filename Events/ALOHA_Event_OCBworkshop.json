@@ -265,178 +265,173 @@
                         "Column title PP in https://www.bco-dmo.org/dataset/3773"
                     ]
                 },
-                {
-                    "@type": "Action",
-                    "name": "Sampling of mesozooplankton",
-                    "actionStatus": "CompletedActionStatus",
-                    "instrument": [
-                        "Towing Net",
-                        {
-                            "@type": "DefinedTerm",
-                            "name": "1-meter ring net",
-                            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L22/current/",
-                            "identifier": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0988/",
-                            "termCode": "TOOL0988",
-                            "additionalProperty": [
-                                {
-                                    "@type": "PropertyValue",
-                                    "name": "Mesh Size",
-                                    "value": "202",
-                                    "unitText": "micrometer"
-                                },
-                                {
-                                    "@type": "PropertyValue",
-                                    "name": "Instrument Type",
-                                    "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
-                                    "value": "1-square-meter ring net"
-                                },
-                                {
-                                    "@type": "PropertyValue",
-                                    "name": "Net Angle",
-                                    "value": "oblique"
-                                },
-                                {
-                                    "@type": "PropertyValue",
-                                    "name": "Net Angle",
-                                    "value": "oblique"
-                                }
-                             "additionalProperty": {
-                             "@type": "HowTo",
-                             "name": "Papermethodname",
-                             "identifier": "DOI",
-                             "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
-                             "tool": [
-                                   "Folsom Splitter"
-                            ]
+                {"@list":[
+                    {
+                        "@type": "Action",
+                        "name": "Sampling of mesozooplankton",
+                        "actionStatus": "CompletedActionStatus",
+                        "instrument": [
+                            "Towing Net",
+                            {
+                                "@type": "DefinedTerm",
+                                "name": "Plankton net",
+                                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L05/current/",
+                                "identifier": "http://vocab.nerc.ac.uk/collection/L05/current/22/",
+                                "termCode": "22",
+                                "additionalProperty": [
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Sampling net mesh size",
+                                        "propertyID": "http://vocab.nerc.ac.uk/collection/Q01/current/Q0100015/",
+                                        "value": "202",
+                                        "unitCode": "http://qudt.org/vocab/unit/MicroM",
+                                        "unitText": "micrometer"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Instrument Type",
+                                        "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
+                                        "value": {
+                                            "@type": "DefinedTerm",
+                                            "name": "MOCNESS modified Tucker trawl - Wiebe et al (1976, 1985)",
+                                            "identifier": "http://vocab.nerc.ac.uk/collection/L22/current/NETT0097/",
+                                            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L22/current/",
+                                            "termCode": "NETT0097"
+                                        }
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Tow Type",
+                                        "value": "oblique",
+                                        "valueReference": {
+                                            "@type": "QualitativeValue",
+                                            "name": "Tow Type Number",
+                                            "value": "7",
+                                            "additionalProperty": {
+                                                "@type": "HowTo",
+                                                "name": "A vocabulary for the configuration of net tows for collecting plankton and micronekton",
+                                                "url": "https://doi.org/10.1093/plankt/fbu101"
+                                            }
+                                        },
+                                        "additionalProperty": {
+                                            "@type": "DigitalDocument",
+                                            "name": "From the Hensen net toward four-dimensional biological oceanography",
+                                            "url": "https://doi.org/10.1016/S0079-6611(02)00140-4"
+                                        }
+                                    },
+                                    {
+                                        "@type": "HowTo",
+                                        "name": "Papermethodname",
+                                        "identifier": "DOI",
+                                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
+                                        "tool": [
+                                            "Folsom Splitter"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "object": [
+                            "Seawater"
+                        ],
+                        "result": [
+                            "Fraction (splits) of mesozooplankton biomass"
+                        ]
                     },
+                    {"@set": [
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the wet weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty":[
+                            {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            }
+                            ],
+                            "result": [
+                                "wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Wet Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of zooplankton biomass"
+                            ],
+                            "result": [
+                                "Dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Dry Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the nitrogen dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "nitrogen wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Nitrogen in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the carbon dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen Fraction of zooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "carbon dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Carbon in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the abundance of mesozooplankton biomass",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Microscope",
+                            "object": [
+                                "Buffered Fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "abundance of mesozooplankton per area filter",
+                                "Todo: Column title #### in ####"
                             ]
                         }
-                    ],
-                    "object": [
-                        "Seawater"
-                    ],
-                    "result": [
-                        "size-fractionated zooplankton distribution"
-                    ]
-                },
-                {
-                    "@type": "Action",
-                    "name": "Determination of the wet weight of mesozooplankton",
-                    "actionStatus": "CompletedActionStatus",
-                    "instrument": "Scale",
-                    "object": [
-                        "Size-fractioned zooplankton distribution"
-                    ],
-                    "result": [
-                        "wet weight of mesozooplankton per seawatar mass",
-                        "Todo: Column title  Wet Wgt in ####"
-                    ]
-                },
-                {
-                    "@type": "Action",
-                    "name": "Determination of the dry weight of mesozooplankton",
-                    "actionStatus": "CompletedActionStatus",
-                    "instrument": "Scale",
-                    "object": [
-                        "Frozen Size-fractioned zooplankton distribution"
-                    ],
-                    "result": [
-                        "Dry weight of mesozooplankton per seawatar mass",
-                        "Todo: Column title  Wet Wgt in ####"
-                    ]
-                },
-                {
-                    "@type": "Action",
-                    "name": "Determination of the nitrogen dry weight of mesozooplankton",
-                    "actionStatus": "CompletedActionStatus",
-                    "instrument": "CHN element analyzer",
-                    "object": [
-                        "Frozen Size-fractioned zooplankton distribution"
-                    ],
-                    "additionalProperty": {
-                        "@type": "HowTo",
-                        "name": "Papermethodname",
-                        "identifier": "DOI",
-                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
-                        "tool": [
-                            "Todo:SplittingMethodTool",
-                            "Todo:PreservationTechniqueTool"
-                        ]
-                    },
-                    "result": [
-                        "nitrogen wet weight of mesozooplankton per seawatar mass",
-                        "Todo: Column title  Nitrogen in ####"
-                    ]
-                },
-                {
-                    "@type": "Action",
-                    "name": "Determination of the nitrogen dry weight of mesozooplankton",
-                    "actionStatus": "CompletedActionStatus",
-                    "instrument": "CHN element analyzer",
-                    "object": [
-                        "Size-fractioned zooplankton distribution"
-                    ],
-                    "additionalProperty": {
-                        "@type": "HowTo",
-                        "name": "Papermethodname",
-                        "identifier": "DOI",
-                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
-                        "tool": [
-                            "Todo:SplittingMethodTool",
-                            "Todo:PreservationTechniqueTool"
-                        ]
-                    },
-                    "result": [
-                        "nitrogen dry weight of mesozooplankton per seawatar mass",
-                        "Todo: Column title  Nitrogen in ####"
-                    ]
-                },
-                {
-                    "@type": "Action",
-                    "name": "Determination of the carbon dry weight of mesozooplankton",
-                    "actionStatus": "CompletedActionStatus",
-                    "instrument": "CHN element analyzer",
-                    "object": [
-                        "Size-fractioned zooplankton distribution"
-                    ],
-                    "additionalProperty": {
-                        "@type": "HowTo",
-                        "name": "Papermethodname",
-                        "identifier": "DOI",
-                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
-                        "tool": [
-                            "Todo:SplittingMethodTool",
-                            "Todo:PreservationTechniqueTool"
-                        ]
-                    },
-                    "result": [
-                        "carbon wet weight of mesozooplankton per seawatar mass",
-                        "Todo: Column title  Nitrogen in ####"
-                    ]
-                },
-                {
-                    "@type": "Action",
-                    "name": "Determination of the carbon dry weight of mesozooplankton",
-                    "actionStatus": "CompletedActionStatus",
-                    "instrument": "CHN element analyzer",
-                    "object": [
-                        "Size-fractioned zooplankton distribution"
-                    ],
-                    "additionalProperty": {
-                        "@type": "HowTo",
-                        "name": "Papermethodname",
-                        "identifier": "DOI",
-                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
-                        "tool": [
-                            "Todo:SplittingMethodTool",
-                            "Todo:PreservationTechniqueTool"
-                        ]
-                    },
-                    "result": [
-                        "carbon dry weight of mesozooplankton per seawatar mass",
-                        "Todo: Column title  Carbon in ####"
-                    ]
-                }
+                    ]}
+                ]}
             ]
         },
         {
@@ -2561,7 +2556,152 @@
                         "dissolved organic carbon concentrations per seawatar mass",
                         "Column title DOC in https://www.bco-dmo.org/dataset/3773"
                     ]
-                }
+                },
+                {"@list":[
+                    {
+                        "@type": "Action",
+                        "name": "Sampling of mesozooplankton",
+                        "actionStatus": "CompletedActionStatus",
+                        "instrument": [
+                            "Towing Net",
+                            {
+                                "@type": "DefinedTerm",
+                                "name": "1-meter ring net",
+                                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L22/current/",
+                                "identifier": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0988/",
+                                "termCode": "TOOL0988",
+                                "additionalProperty": [
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Mesh Size",
+                                        "value": "202",
+                                        "unitCode": "http://qudt.org/vocab/unit/MicroM",
+                                        "unitText": "micrometer"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Instrument Type",
+                                        "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
+                                        "value": "1-square-meter ring net"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Tow Angle",
+                                        "value": "oblique"
+                                    },
+                                    {
+                                        "@type": "HowTo",
+                                        "name": "Papermethodname",
+                                        "identifier": "DOI",
+                                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
+                                        "tool": [
+                                            "Folsom Splitter"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "object": [
+                            "Seawater"
+                        ],
+                        "result": [
+                            "Splits of mesozooplankton biomass"
+                        ]
+                    },
+                    {"@set": [
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the wet weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty":[
+                            {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            }
+                            ],
+                            "result": [
+                                "wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Wet Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of zooplankton biomass"
+                            ],
+                            "result": [
+                                "Dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Dry Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the nitrogen dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "nitrogen wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Nitrogen in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the carbon dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen Fraction of zooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "carbon dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Carbon in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the abundance of mesozooplankton biomass",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Microscope",
+                            "object": [
+                                "Buffered Fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "abundance of mesozooplankton per area filter",
+                                "Todo: Column title #### in ####"
+                            ]
+                        }
+                    ]}
+                ]}
             ]
         },
         {
@@ -2810,7 +2950,152 @@
                         "dissolved organic carbon concentrations per seawatar mass",
                         "Column title DOC in https://www.bco-dmo.org/dataset/3773"
                     ]
-                }
+                },
+                {"@list":[
+                    {
+                        "@type": "Action",
+                        "name": "Sampling of mesozooplankton",
+                        "actionStatus": "CompletedActionStatus",
+                        "instrument": [
+                            "Towing Net",
+                            {
+                                "@type": "DefinedTerm",
+                                "name": "1-meter ring net",
+                                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L22/current/",
+                                "identifier": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0988/",
+                                "termCode": "TOOL0988",
+                                "additionalProperty": [
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Mesh Size",
+                                        "value": "202",
+                                        "unitCode": "http://qudt.org/vocab/unit/MicroM",
+                                        "unitText": "micrometer"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Instrument Type",
+                                        "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
+                                        "value": "1-square-meter ring net"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Tow Angle",
+                                        "value": "oblique"
+                                    },
+                                    {
+                                        "@type": "HowTo",
+                                        "name": "Papermethodname",
+                                        "identifier": "DOI",
+                                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
+                                        "tool": [
+                                            "Folsom Splitter"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "object": [
+                            "Seawater"
+                        ],
+                        "result": [
+                            "Splits of mesozooplankton biomass"
+                        ]
+                    },
+                    {"@set": [
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the wet weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty":[
+                            {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            }
+                            ],
+                            "result": [
+                                "wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Wet Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of zooplankton biomass"
+                            ],
+                            "result": [
+                                "Dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Dry Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the nitrogen dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "nitrogen wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Nitrogen in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the carbon dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen Fraction of zooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "carbon dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Carbon in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the abundance of mesozooplankton biomass",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Microscope",
+                            "object": [
+                                "Buffered Fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "abundance of mesozooplankton per area filter",
+                                "Todo: Column title #### in ####"
+                            ]
+                        }
+                    ]}
+                ]}
             ]
         },
         {
@@ -3077,7 +3362,152 @@
                         "dissolved organic carbon concentrations per seawatar mass",
                         "Column title DOC in https://www.bco-dmo.org/dataset/3773"
                     ]
-                }
+                },
+                {"@list":[
+                    {
+                        "@type": "Action",
+                        "name": "Sampling of mesozooplankton",
+                        "actionStatus": "CompletedActionStatus",
+                        "instrument": [
+                            "Towing Net",
+                            {
+                                "@type": "DefinedTerm",
+                                "name": "1-meter ring net",
+                                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L22/current/",
+                                "identifier": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0988/",
+                                "termCode": "TOOL0988",
+                                "additionalProperty": [
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Mesh Size",
+                                        "value": "202",
+                                        "unitCode": "http://qudt.org/vocab/unit/MicroM",
+                                        "unitText": "micrometer"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Instrument Type",
+                                        "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
+                                        "value": "1-square-meter ring net"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Tow Angle",
+                                        "value": "oblique"
+                                    },
+                                    {
+                                        "@type": "HowTo",
+                                        "name": "Papermethodname",
+                                        "identifier": "DOI",
+                                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
+                                        "tool": [
+                                            "Folsom Splitter"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "object": [
+                            "Seawater"
+                        ],
+                        "result": [
+                            "Splits of mesozooplankton biomass"
+                        ]
+                    },
+                    {"@set": [
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the wet weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty":[
+                            {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            }
+                            ],
+                            "result": [
+                                "wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Wet Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of zooplankton biomass"
+                            ],
+                            "result": [
+                                "Dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Dry Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the nitrogen dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "nitrogen wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Nitrogen in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the carbon dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen Fraction of zooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "carbon dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Carbon in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the abundance of mesozooplankton biomass",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Microscope",
+                            "object": [
+                                "Buffered Fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "abundance of mesozooplankton per area filter",
+                                "Todo: Column title #### in ####"
+                            ]
+                        }
+                    ]}
+                ]}
             ]
         },
         {
@@ -3326,7 +3756,152 @@
                         "dissolved organic carbon concentrations per seawatar mass",
                         "Column title DOC in https://www.bco-dmo.org/dataset/3773"
                     ]
-                }
+                },
+                {"@list":[
+                    {
+                        "@type": "Action",
+                        "name": "Sampling of mesozooplankton",
+                        "actionStatus": "CompletedActionStatus",
+                        "instrument": [
+                            "Towing Net",
+                            {
+                                "@type": "DefinedTerm",
+                                "name": "1-meter ring net",
+                                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L22/current/",
+                                "identifier": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0988/",
+                                "termCode": "TOOL0988",
+                                "additionalProperty": [
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Mesh Size",
+                                        "value": "202",
+                                        "unitCode": "http://qudt.org/vocab/unit/MicroM",
+                                        "unitText": "micrometer"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Instrument Type",
+                                        "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
+                                        "value": "1-square-meter ring net"
+                                    },
+                                    {
+                                        "@type": "PropertyValue",
+                                        "name": "Tow Angle",
+                                        "value": "oblique"
+                                    },
+                                    {
+                                        "@type": "HowTo",
+                                        "name": "Papermethodname",
+                                        "identifier": "DOI",
+                                        "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html",
+                                        "tool": [
+                                            "Folsom Splitter"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "object": [
+                            "Seawater"
+                        ],
+                        "result": [
+                            "Splits of mesozooplankton biomass"
+                        ]
+                    },
+                    {"@set": [
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the wet weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty":[
+                            {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            }
+                            ],
+                            "result": [
+                                "wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Wet Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Balance",
+                            "object": [
+                                "Frozen fraction of zooplankton biomass"
+                            ],
+                            "result": [
+                                "Dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Dry Wgt in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the nitrogen dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "nitrogen wet weight of mesozooplankton per area filter",
+                                "Todo: Column title  Nitrogen in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the carbon dry weight of mesozooplankton",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "CHN elemental analyzer",
+                            "object": [
+                                "Frozen Fraction of zooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "carbon dry weight of mesozooplankton per area filter",
+                                "Todo: Column title  Carbon in ####"
+                            ]
+                        },
+                        {
+                            "@type": "Action",
+                            "name": "Determination of the abundance of mesozooplankton biomass",
+                            "actionStatus": "CompletedActionStatus",
+                            "instrument": "Microscope",
+                            "object": [
+                                "Buffered Fraction of mesozooplankton biomass"
+                            ],
+                            "additionalProperty": {
+                                "@type": "HowTo",
+                                "name": "Papermethodname",
+                                "identifier": "DOI",
+                                "url": "https://hahana.soest.hawaii.edu/hot/methods/plankton.html"
+                            },
+                            "result": [
+                                "abundance of mesozooplankton per area filter",
+                                "Todo: Column title #### in ####"
+                            ]
+                        }
+                    ]}
+                ]}
             ]
         }
     ]
