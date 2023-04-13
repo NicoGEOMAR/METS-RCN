@@ -1,0 +1,239 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "EventSeries",
+    "@id": "",
+    "name": "HOT ALOHA primary productiviry",
+    "description": "Primary productivity measurements from the Hawaii Ocean Time-Series (HOT) project from October 1988 to December 2019 at station ALOHA.",
+    "url": "",
+    "keywords": [
+        "ALOHA",
+        "HOT",
+        "primary productivity"
+    ],
+    "startDate": "1988-10-31T00:56:00Z",
+    "location": {
+        "name": "Station ALOHA offshore of Hawaii",
+        "@type": "Place",
+        "description": "North Pacific subtropical gyre",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "-158.13 22.90, -158.13 22.70, -157.90 22.70, -157.90 22.90, -158.13 22.90"
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "GPS Accuracy / Location error",
+                "value": "18",
+                "unitCode": "http://qudt.org/vocab/unit/M"
+            }
+        ]
+    },
+    "funder": "National Science Foundation (NSF)",
+    "funding": [
+        "0926766",
+        "1260164",
+        "1756517"
+    ],
+    "recordedIn": [
+        {
+            "@type": "Dataset",
+            "url": "https://www.bco-dmo.org/dataset/737163",
+            "identifier": "DOI:10.1575/1912/bco-dmo.737163.1",
+            "description": "",
+            "provider": [
+                {
+                    "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/8691",
+                    "legalName": "University of Hawaii at Manoa, Department of Oceanography",
+                    "name": "University of Hawaii at Manoa, Department of Oceanography",
+                    "url": "https://www.soest.hawaii.edu/"
+                },
+                {
+                    "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0002-0938-7948",
+                    "legalName": "Angelique White",
+                    "name": "Angelique White"
+                },
+                {
+                    "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/9783",
+                    "legalName": "Woods Hole Oceanographic Institution",
+                    "name": "BCO-DMO",
+                    "url": "https://www.bco-dmo.org/"
+                }
+            ]
+        }
+    ],
+    "citation": [
+        "https://hahana.soest.hawaii.edu/hot/"
+    ],
+    "contributor": [
+        "Angelique White",
+        "David M. Karl",
+        "Lance A Fujieki ",
+        "Dana Stuart Gerlach"
+    ],
+    "subevent": [
+        {
+            "@type": "Event",
+            "name": "HOT_001 until HOT_007",
+            "description": "Primary productivity measurements at ALOHA station",
+            "instrument": [
+                "R/V MOANA WAVE",
+                "SSP KAIMALINO"
+            ],
+            "startDate": "1988-10-30T00:00:00Z",
+            "endDate": "",
+            "location": {
+                "name": "ALOHA",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "-158.4133 23.015, -158.4133 22.5733, -157.9017 22.5733, -157.9017 23.015, -158.4133 23.015"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "R. Lukas",
+                "D. Karl"
+            ],
+            "citation": "https://hahana.soest.hawaii.edu/hot/reports/rep_y1.pdf",
+            "potentialAction": [
+                {
+                    "@type": "Action",
+                    "name": "Determination of carbon 14 productivity",
+                    "actionStatus": "CompletedActionStatus",
+                    "instrument": {
+                        "@type": "Thing",
+                        "name": "Liquid scintillation counter",
+                        "additionalProperty": {
+                            "@type": "PropertyValue",
+                            "name": "Instrument Type",
+                            "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
+                            "value": {
+                                "@type": "DefinedTerm",
+                                "name": "Liquid scintillation counter",
+                                "identifier": "http://vocab.nerc.ac.uk/collection/L05/current/LAB21/",
+                                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L05/current/",
+                                "termCode": "LAB21"
+                            }
+                        }
+                    },
+                    "object": [
+                        "GFF filtered particulate seawater samples incubated from dawn til dusk on deck"
+                    ],
+                    "result": [
+                        "carbon 14 productivity",
+                        "Column title Light_rep1 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Light_rep2 in https://www.bco-dmo.org/dataset/737163.",
+                        "Column title Light_rep3 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Dark_rep1 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Dark_rep2 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Dark_rep3 in https://www.bco-dmo.org/dataset/737163"
+                    ],
+                    "additionalProperty": {
+                        "@type": "HowTo",
+                        "name": "14C production",
+                        "url": "https://hahana.soest.hawaii.edu/hot/methods/pprod.html"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "Event",
+            "name": "HOT_008 until HOT_346",
+            "description": "Primary productivity measurements at ALOHA station",
+            "instrument": [
+                "R/V MOANA WAVE",
+                "SSP KAIMALINO"
+            ],
+            "startDate": "1989-07-27T00:00:00Z",
+            "endDate": "",
+            "location": {
+                "name": "ALOHA",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "-158.4133 23.015, -158.4133 22.5733, -157.9017 22.5733, -157.9017 23.015, -158.4133 23.015"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "R. Lukas",
+                "D. Karl"
+            ],
+            "citation": "https://hahana.soest.hawaii.edu/hot/reports/rep_y1.pdf",
+            "potentialAction": [
+                {
+                    "@type": "Action",
+                    "name": "Determination of carbon 14 productivity",
+                    "actionStatus": "CompletedActionStatus",
+                    "instrument": {
+                        "@type": "Thing",
+                        "name": "Liquid scintillation counter",
+                        "additionalProperty": {
+                            "@type": "PropertyValue",
+                            "name": "Instrument Type",
+                            "propertyID": "http://vocab.nerc.ac.uk/collection/W06/current/CLSS0002/",
+                            "value": {
+                                "@type": "DefinedTerm",
+                                "name": "Liquid scintillation counter",
+                                "identifier": "http://vocab.nerc.ac.uk/collection/L05/current/LAB21/",
+                                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L05/current/",
+                                "termCode": "LAB21"
+                            }
+                        }
+                    },
+                    "object": [
+                        "GFF filtered particulate seawater samples incubated from dawn til dusk in-situ"
+                    ],
+                    "result": [
+                        "carbon 14 productivity",
+                        "Column title Light_rep1 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Light_rep2 in https://www.bco-dmo.org/dataset/737163.",
+                        "Column title Light_rep3 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Dark_rep1 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Dark_rep2 in https://www.bco-dmo.org/dataset/737163",
+                        "Column title Dark_rep3 in https://www.bco-dmo.org/dataset/737163"
+                    ],
+                    "additionalProperty": {
+                        "@type": "HowTo",
+                        "name": "14C production",
+                        "url": "https://hahana.soest.hawaii.edu/hot/methods/pprod.html"
+                    }
+                }
+            ]
+        }
+    ]
+}
