@@ -1,0 +1,233 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "name": "HOT ALOHA primary production",
+    "description": "",
+    "url": "",
+    "sameAs": "",
+    "version": "2022-07-03",
+    "keywords": [
+        "14C"
+    ],
+    "recordedAt": [
+        {
+            "@type": "Event",
+            "name": "HOT ALOHA primary production",
+            "description": "",
+            "startDate": "1988-10-31T00:00:00Z"
+        },
+        {
+            "@type": "Event",
+            "name": "HOT ALOHA Niskin Bottles",
+            "description": "",
+            "startDate": "1988-10-31T00:00:00Z"
+        }
+    ],
+    "isAccessibleForFree": true,
+    "datePublished": "2022-07-03",
+    "identifier": {
+        "@type": "PropertyValue",
+        "name": "DOI:10.1575/1912/bco-dmo.737163.1",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "value": "",
+        "url": "https://doi.org/"
+    },
+    "citation": "",
+    "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "",
+        "encodingFormat": ""
+    },
+    "temporalCoverage": "1983-01-01/2019-12-19",
+    "location": {
+        "name": "ALOHA",
+        "@type": "Place",
+        "description": "Subtropical North Pacific Gyre",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": [
+                "-158.13 22.90, -158.13 22.70, -157.90 22.70, -157.90 22.90, -158.13 22.90"
+            ]
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "GPS Accuracy / Location error",
+                "value": "18",
+                "unitCode": "http://qudt.org/vocab/unit/M"
+            }
+        ]
+    },
+    "creator": [
+        {
+            "@type": "Role",
+            "roleName": "Contact",
+            "creator": {
+                "@type": "Person",
+                "name": "",
+                "givenName": "",
+                "familyName": "",
+                "url": ""
+            }
+        }
+    ],
+    "provider": {
+        "@id": "https://www.bco-dmo.org/",
+        "@type": "Organization",
+        "legalName": "Biological & Chemical Oceanography Data Management Office",
+        "name": "BCO-DMO",
+        "url": "https://www.bco-dmo.org/"
+    },
+    "publisher": {
+        "@id": "https://www.bco-dmo.org/"
+    },
+    "funding": [
+        {
+            "@type": "MonetaryGrant",
+            "identifier": [
+                "0327513",
+                "0752606",
+                "0926766",
+                "1260164",
+                "1756517"
+            ],
+            "name": [
+                "A Time-Series Study of Ocean Climate Processes in the North Pacific Subtropical Gyre",
+                "Hawaii Ocean Time-series: Study of Subtropical Gyre Physics and Climate Interactions",
+                "The Hawaii Ocean Time-series (HOT): Sustaining ocean ecosystem and climate observations in the North Pacific Subtropical Gyre",
+                "The Hawaii Ocean Time-series (HOT): Sustaining ocean ecosystem and climate observations in the North Pacific Subtropical Gyre",
+                "Hawaii Ocean Time-series (HOT): 2018-2023"
+            ],
+            "url": [
+                "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1756517&HistoricalAwards=false",
+                "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0926766&HistoricalAwards=false",
+                "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1260164&HistoricalAwards=false",
+                "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0752606&HistoricalAwards=false",
+                "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0327513&HistoricalAwards=false"
+            ],
+            "funder": {
+                "@type": "Organization",
+                "name": "National Science Foundation (NSF)"
+            }
+        }
+    ],
+    "license": "https://spdx.org/licenses/CC-BY-3.0",
+    "variableMeasured": [
+        {
+            "@type": "PropertyValue",
+            "name": "Cruise",
+            "description": "Gives Cruise ID of Station Visit"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Start_ISO_DateTime_UTC",
+            "alternateName": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                    "termCode": "ADATAA01",
+                    "name": "Date",
+                    "url": "http://vocab.nerc.ac.uk/collection/P01/current/ADATAA01"
+                }
+            ],
+            "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#date",
+            "description": "Start time of sample in ISOformat."
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "End_ISO_DateTime_UTC",
+            "alternateName": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                    "termCode": "ADATAA01",
+                    "name": "Date",
+                    "url": "http://vocab.nerc.ac.uk/collection/P01/current/ADATAA01"
+                }
+            ],
+            "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#date",
+            "description": "Start time of sample in ISOformat."
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Latitude",
+            "alternateName": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                    "termCode": "ALATAA01",
+                    "name": "Latitude north",
+                    "url": "http://vocab.nerc.ac.uk/collection/P01/current/ALATAA01"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+                    "termCode": "849759",
+                    "name": "lat",
+                    "url": "https://www.bco-dmo.org/search/parameter/849759"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+                    "name": "Latitude"
+                }
+            ],
+            "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#latitude",
+            "description": "Latitude where water samples were collected; north is positive. Latitude is a geographic coordinate which refers to the angle from a point on the Earth's surface to the equatorial plane",
+            "unitText": "decimal degrees"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Longitude",
+            "alternateName": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                    "termCode": "ALONZZ01",
+                    "name": "Longitude east",
+                    "url": "http://vocab.nerc.ac.uk/collection/P01/current/ALONZZ01"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "https://www.bco-dmo.org/search/parameter",
+                    "termCode": "849760",
+                    "name": "lon",
+                    "url": "https://www.bco-dmo.org/search/parameter/849760"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "https://doi.org/10.3389/fmars.2021.705638",
+                    "name": "Longitude"
+                }
+            ],
+            "url": "https://exchange-format.readthedocs.io/en/latest/parameters.html#longitude",
+            "description": "Longitude where water samples were collected; east is positive.",
+            "unitText": "decimal degrees"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Incubation_type",
+            "description": "time of incubation",
+            "unitText": "seconds"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Time_duration",
+            "description": "",
+            "unitText": "seconds"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Chla_a_mean",
+            "description": "nitrogen weight of mesozooplankton per area filter",
+            "unitText": "miligrams per square meter (mg/m2)"
+        }
+    ]
+}
