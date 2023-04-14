@@ -36,6 +36,23 @@
                 "propertyID": "GPS Accuracy / Location error",
                 "value": "18",
                 "unitCode": "http://qudt.org/vocab/unit/M"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "depth",
+              "alternateName": {
+                "@type": "DefinedTerm",
+                "name": "Depth (spatial coordinate) relative to water surface in the water body",
+                "description": "The distance of a sensor or sampling point below the sea surface",
+                "termCode": "ADEPZZ01",
+                "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current/",
+                "url": "http://vocab.nerc.ac.uk/collection/P01/current/ADEPZZ01/"
+              },
+              "valueReference": {
+                "@type": "QuantitativeValue ",
+                "minValue": 0,
+                "maxValue": 300
+              }
             }
         ]
     },
