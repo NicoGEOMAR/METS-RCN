@@ -47,7 +47,7 @@ jobs:
         id: sitemapdatasetallgood
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: https://raw.githubusercontent.com/earthcube/METS-RCN/main/
+          base-url-path: https://raw.githubusercontent.com/NicoGEOMAR/METS-RCN/main/Examples
           path-to-root: .
           include-pdf: false
           additional-extensions: json jsonld

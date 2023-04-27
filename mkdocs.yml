@@ -1,8 +1,8 @@
 site_name: Geocodes Metadata
 site_url: https://earthcube.github.io/GeoCODES-Metadata/site/
-docs_dir: .
+docs_dir: Examples
 #theme: 'material'
 #theme: 'mkdocs'
 nav:
-  - Readme: README.md
+  - Readme: ../README.md
 
