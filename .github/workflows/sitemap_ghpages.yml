@@ -58,10 +58,10 @@ jobs:
           echo "excluded-count = ${{ steps.sitemapdatasetallgood.outputs.excluded-count }}"
       #
 
-#      - run: mkdocs build --config-file mkdocs_geocodesmetadata.yml
-#      - name: push to gh pages
-#        uses: JamesIves/github-pages-deploy-action@4.1.6
-#        with:
-#          branch: gh-pages
-#          folder: .
-#          clean: false
+      - run: mkdocs build --config-file mkdocs_geocodesmetadata.yml
+      - name: push to gh pages
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          branch: gh-pages
+          folder: .
+          clean: false
