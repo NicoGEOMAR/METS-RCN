@@ -6,3 +6,5 @@ These subevents are categorized accoring to similar methods applied for collecti
 
 
 Each dataset file provides information about related datasets of the time series stations. The metadata of the overarching data product pilot is also given here.
+
+You can find the sitemap [here](sitemap.xml)

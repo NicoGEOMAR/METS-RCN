@@ -1,5 +1,10 @@
 name: Generate xml sitemap
+# In github settings
+# pages, deploy from a branch
+#   branch gh_pages > root
 
+# sitemap will be at: https://earthcube.github.io/METS-RCN/sitemap.xml
+# sitemap will be at: https://METS-RCN.github.io/METS-RCN/sitemap.xml
 on:
   push:
     branches:
