@@ -7,5 +7,7 @@ These subevents are categorized accoring to similar methods applied for collecti
 
 Each dataset file provides information about related datasets of the time series stations. The metadata of the overarching data product pilot is also given here.
 
-The raw github sitemap has a flawed XML prolog, so we deploy it via [github pages](https://earthcube.github.io/METS-RCN/Examples/)
+The raw github sitemap has a flawed XML prolog, so we deploy it via [github pages](https://mets-rcn.github.io/METS-RCN/Examples/)
+
+https://mets-rcn..github.io/METS-RCN/sitemap.xml
 
