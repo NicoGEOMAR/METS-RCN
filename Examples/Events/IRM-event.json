@@ -1,0 +1,1176 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "EventSeries",
+    "@id": "https://pidOfThisJsonLDdoc.org/",
+    "name": "IrmingerSea Time-Series Station FX9 Bottle Data",
+    "description":"Time series data of total alkalinity, dissolved inorganic carbon, partial CO2 pressure, inorganic nutrients, salinity and temperature collected from discrete samples and profile observations in the North Atlantic Ocean for monitoring carbonate chemistry in icelandic waters.",
+    "url": "",
+    "keywords": [
+        "ImringerSea",
+        "hydrography",
+        "biogeochemical",
+        "bottle"
+    ],
+    "startDate": "1991-11-16T00:00:00Z",
+    "endDate": "2019-10-22T00:00:00Z",
+    "location": {
+        "name": "IrmingerSeaTS",
+        "@type": "Place",
+        "description": "Irminger Sea",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "GPS Accuracy / Location error",
+                "value": "18",
+                "unitCode": "http://qudt.org/vocab/unit/M"
+            }
+        ]
+    },
+    "funder": ["MFRI"],
+    "funding": ["Nordic WOCE", "ESOP 1", "ESOP 2", "TRACTOR", "CARBOOCEAN", "CARBOCHANGE", "COMFORT", "EPOCA"],
+    "citation": [
+        "https://essd.copernicus.org/articles/2/99/2010/essd-2-99-2010.pdf"
+    ],
+    "contributor": [
+        "Sólveig Ólafsdóttir",
+        "Alice Benoit-Cattin",
+        "Magnús Danielsen"
+    ],   
+    "subjectOf": [
+        {
+            "@type": "Dataset",
+            "url": [
+                "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098",
+                "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"                
+            ],
+            "identifier": [
+            "https://doi.org/10.3334/cdiac/otg.carina_irmingersea_v2",
+            "https://doi.org/10.25921/vjmy-8h90"
+            ],
+            "description": "Dissolved inorganic carbon (DIC), total alkalinity, temperature, salinity, nutrients and dissolved oxygen collected from discrete samples and profile observations during the R/Vs Arni Fridriksson and Bjarni Saemundsson Irminger Sea (FX9) time series cruises in the North Atlantic Ocean.",
+            "provider": [
+                {
+                    "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/18341",
+                    "legalName": "Marine and Freshwater Research Institute",
+                    "name": "MFRI",
+                    "url": "https://www.hafogvatn.is"
+                },
+                {
+                    "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0001-5439-2546",
+                    "legalName": "Sólveig Ólafsdóttir",
+                    "name": "Sólveig Ólafsdóttir"
+                },
+                {
+                    "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/17596",
+                    "legalName": "NOAA NESDIS National Centers for Environmental Information",
+                    "name": "NCEI",
+                    "url": "https://www.ncei.noaa.gov/"
+                }
+            ]
+        }
+    ],
+    "subevent": [
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements until 1986",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 1983 until 1986",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "1983-03-05T00:00:00Z",
+            "endDate": "1986-02-01T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Micro burette",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon AutoAnalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon AutoAnalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Coulemetry",
+                    "poisoned"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of partial pressure of carbon dioxide",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Gas-chromatography"
+                ],
+                "result":[
+                    "partial pressure of carbon dioxide of sample",
+                    "Column title pCO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements from 1987 until 1990",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 1987 until 1990",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "1987-02-01T00:00:00Z",
+            "endDate": "1990-11-08T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Micro burette",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Coulemetry",
+                    "poisoned"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of partial pressure of carbon dioxide",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Gas-chromatography"
+                ],
+                "result":[
+                    "partial pressure of carbon dioxide of sample",
+                    "Column title pCO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements from 1991",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 1991",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "1991-09-04T00:00:00Z",
+            "endDate": "1991-11-17T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Micro burette",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC -Inc CM-5011",
+                "object":[
+                    "Coulemetry",
+                    "poisoned"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of partial pressure of carbon dioxide",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "flask equilibrator coupled to GC or NDIR",
+                "object":[
+                    "Gas-chromatography",
+                    "poisoned"
+                ],
+                "result":[
+                    "partial pressure of carbon dioxide of sample",
+                    "Column title pCO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements from 1992",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 1992",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "1992-02-29T00:00:00Z",
+            "endDate": "1992-10-15T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Micro burette",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC -Inc CM-5011",
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of partial pressure of carbon dioxide",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "flask equilibrator coupled to GC or NDIR",
+                "object":[
+                    "Gas-chromatography",
+                    "poisoned"
+                ],
+                "result":[
+                    "partial pressure of carbon dioxide of sample",
+                    "Column title pCO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements from 1993 until 1996",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 1993 until 1996",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "1993-02-23T00:00:00Z",
+            "endDate": "1996-11-01T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Micro burette",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC -Inc CM-5011",
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of partial pressure of carbon dioxide",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "flask equilibrator coupled to GC or NDIR",
+                "object":[
+                    "Gas-chromatography",
+                    "poisoned"
+                ],
+                "result":[
+                    "partial pressure of carbon dioxide of sample",
+                    "Column title pCO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements from 1997 until 2010",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 1997 until 2010",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "1997-02-12T00:00:00Z",
+            "endDate": "2010-10-29T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Micro burette",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Chemlab three channel autoanalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC -Inc CM-5011",
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of partial pressure of carbon dioxide",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "flask equilibrator coupled to GC or NDIR",
+                "object":[
+                    "Gas-chromatography",
+                    "poisoned"
+                ],
+                "result":[
+                    "partial pressure of carbon dioxide of sample",
+                    "Column title pCO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements from 2010 until 2013",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 2010 until 2013",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "2010-02-09T00:00:00Z",
+            "endDate": "2013-11-13T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Micro burette",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL analytical AutoAnalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NITRAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL analytical AutoAnalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL analytical AutoAnalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC -Inc CM-5011",
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of partial pressure of carbon dioxide",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "flask equilibrator coupled to GC or NDIR",
+                "object":[
+                    "Gas-chromatography",
+                    "poisoned"
+                ],
+                "result":[
+                    "partial pressure of carbon dioxide of sample",
+                    "Column title pCO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0149098"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "Biogeochemical measurements from 2014 until 2019",
+            "description": "Hydrographic bottle measurements at IrmingerSea TS from 2010 until 2013",
+            "instrument": ["R/V Bjarni Saemundsson", "R/V Arni Fridriksson"],
+            "startDate": "2014-02-11T00:00:00Z",
+            "endDate": "2019-10-23T00:00:00Z",
+            "location": {
+                "name": "IrmingerSeaTS",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon":"64.4000 -28.0200, 64.3212 -28.0200, 64.3212 -26.0000, 64.4000 -26.0000, 64.4000 -28.0200"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Autosal 8400B",
+                "object":[
+                    "Autosal",
+                    "Glass bottles",
+                    "OSIL"
+                ],
+                "result":[
+                    "practical salinity of sample",
+                    "Column title SALNTY in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm 876 Dosimat",
+                "object":[
+                    "Winkler",
+                    "Carpenter"
+                ],
+                "result":[
+                    "oxygen concentrations per seawatar mass",
+                    "Column title OXYGEN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL analytical AutoAnalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "nitrate concentrations per seawatar mass",
+                    "Column title NO3+NO2 in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL analytical AutoAnalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PHSPHT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "SEAL analytical AutoAnalyzer",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Artificial sea water (ASW)",
+                    "Filtered (Surface)",
+                    "Frozen",
+                    "Reference Material: Quasimeme"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SILCAT in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total dissolved inorganic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "UIC -Inc CM-5011",
+                "object":[
+                    "Coulemetry",
+                    "poisoned",
+                    "CRM"
+                ],
+                "result":[
+                    "total dissolved inorganic carbon per seawatar mass",
+                    "Column title TCARBN in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Metrohm Titrando 888",
+                "object":[
+                    "Titration: Potentiometric",
+                    "open cell",
+                    "curve fitting method: modified Gran plot",
+                    "CRM",
+                    "poisoned"
+                ],
+                "result":[
+                    "totala alkalinity per seawater mass",
+                    "Column title ALKALI in https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0209072"
+                ]
+            }]
+        }
+    ]
+}

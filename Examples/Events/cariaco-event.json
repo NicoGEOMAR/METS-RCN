@@ -1,0 +1,1126 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "EventSeries",
+    "@id": "https://pidOfThisJsonLDdoc.org/",
+    "name": "CARIACO Niskin Bottles",
+    "description":"The CARIACO Ocean Time-Series Program (formerly known as CArbon Retention In A Colored Ocean) started on November 1995 (CAR-001) and ended on January 2017 (CAR-232). Monthly cruises were conducted to the CARIACO station (10.50° N, 64.67° W) onboard the R/V Hermano Ginés of the Fundación La Salle de Ciencias Naturales de Venezuela. During each cruise, a minimum of four hydrocasts were performed to collect a suite of core monthly observations. We conducted separate shallow and deep casts to obtain a better vertical resolution of in-situ Niskin-bottles samples for chemical observations, and for productivity, phytoplankton, and pigment observations.",
+    "url": "",
+    "keywords": [
+        "CARIACO",
+        "hydrography",
+        "biogeochemical",
+        "Niskin"
+    ],
+    "startDate": "1995-11-08T00:00:00Z",
+    "endDate": "2017-01-12T00:00:00Z",
+    "location": {
+        "name": "Cariaco Basin",
+        "@type": "Place",
+        "description": "Carribean Sea offshore off Venezuela",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "-64.735 10.683, -64.735 10.492, -64.367 10.492, -64.367 10.683, -64.735 10.683"
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            },
+            {
+                "@type": "PropertyValue",
+                "propertyID": "GPS Accuracy / Location error",
+                "value": "18",
+                "unitCode": "http://qudt.org/vocab/unit/M"
+            }
+        ]
+    },
+    "funder": ["National Science Foundation (NSF)","Fondo Nacional de Ciencia FONACIT","Ley Orgánica de Ciencia LOCTI","Inter-American Institute for Global Change Research IAI"],
+    "funding": ["0752139","9401537","9729697","0326268","9216626","9711318","9415790","9729284","0963028","1259043","0326313","2000001702","2011000353","3914","IAI-CRN3094"],
+    "subjectOf": [
+        {
+            "@type": "Dataset",
+            "url": "https://www.bco-dmo.org/dataset/3093",
+            "identifier": "DOI:10.1575/1912/bco-dmo.3093",
+            "description": "Muller-Karger et al. (2019) Time-series Niskin-bottle sample data from R/V Hermano Gines cruises in the Cariaco Basin from 1995 through 2017 (CARIACO Ocean Time-Series Program) (Version 1).",
+            "provider": [
+                {
+                    "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/18963",
+                    "legalName": "College of Marine Sciences, University of South Florida",
+                    "name": "College of Marine Sciences, University of South Florida",
+                    "url": "https://imars.usf.edu/publications/"
+                },
+                {
+                    "@type": "Person",
+                    "identifier": "https://orcid.org/0000-0003-3159-5011",
+                    "legalName": "Frank Muller-Karger",
+                    "name": "Frank Muller-Karger"
+                },
+                {
+                    "@type": "Organization",
+                    "identifier": "https://oceanexpert.org/institution/9783",
+                    "legalName": "Woods Hole Oceanographic Institution",
+                    "name": "BCO-DMO",
+                    "url": "https://www.bco-dmo.org/"
+                }
+            ]
+        }
+    ],
+    "citation": [
+        "https://imars.usf.edu/cariaco/"
+    ],
+    "contributor": [
+        "Frank Muller-Karger",
+        "Laura Lorenzoni",
+        "Digna Rueda-Roa"
+    ],   
+    "subevent": [
+        {
+            "@type": "Event",
+            "name": "CAR_001 until CAR_068",
+            "description": "Year 1 until year 6 Hydrographic measurements at CARIACO station",
+            "instrument": ["R/V Hermano Ginés"],
+            "startDate": "1995-11-08T00:00:00Z",
+            "endDate": "2001-07-10T00:00:00Z",
+            "location": {
+                "name": "CARIACO",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "-64.6730 10.6830, -64.6730 10.4920, -64.3670 10.4920, -64.3670 10.6830, -64.6730 10.6830"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Yrene Astor",
+                "Dr Frank Muller-Karger",
+                "Dr Mary I. Scranton",
+                "Gordon T. Taylor",
+                "Dr Robert C. Thunell",
+                "Ramon Varela"
+            ],
+            "citation": "https://repository.oceanbestpractices.org/handle/11329/384",
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Portasal 8410",
+                "object":[
+                    "Autosal",
+                    "Glass bottle",
+                    "Standard: IAPSO"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title Salinity_bottles in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Winkler",
+                    "End-point detection: Visual Starch",
+                    "Carpenter"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title O2_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+           {
+                "@type": "Action",
+                "name": "Determination of nitrite and nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.7 µm GF/F filter"
+                ],
+                "result":[
+                    "nitrite and nitrite concentrations per seawatar mass",
+                    "Column title NO3_NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrite",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW) reference material",
+                    "Frozen",
+                    "Filtered: 0.7 µm GF/F filter"
+                ],
+                "result":[
+                    "nitrite concentrations per seawatar mass",
+                    "Column title NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.7 µm GF/F filter"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.7 µm GF/F filter",
+                    "Frozen"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SiO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.7 µm GF/F filter",
+                    "Frozen"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Double beam spectrophotometer",
+                "object":[
+                    "Spectrophotometer",
+                    "Poisoned",
+                    "Indicator: bromocresol green",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title Alkalinity_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of pH",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Ocean Optics S1000 dual channel fiber optic",
+                "object":[
+                    "Spectrophotometer",
+                    "Total Scale",
+                    "25°C",
+                    "Indicator: m-cresol purple",
+                    "R = A578/A434",
+                    "Parametrization: Clayton and Byrne (1993)",
+                    "Impurity Correction: 434Aimp corrective model"
+                ],
+                "result":[
+                    "pH value",
+                    "Column title pH_corrected in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) carbon concentrations per seawatar mass",
+                    "Column title POC_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) nitrogen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) nitrogen concentrations per seawatar mass",
+                    "Column title PON_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "total particulate phosphorus concentrations per seawatar mass",
+                    "Column title TPP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of inorganic particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "inorganic particulate phosphorus concentrations per seawatar mass",
+                    "Column title PIP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of dissolved organic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": [
+                    "Shimadzu TOC-L CPH",
+                    "ASI-L auto sampler",
+                    "TNM-L total nitrogen detector"
+                ],
+                "object":[
+                    "High temperature combustion",
+                    "Frozen",
+                    "Filter: 0.7 µm",
+                    "CRM: Hansell"
+                ],
+                "result":[
+                    "dissolved organic carbon concentrations per seawatar mass",
+                    "Column title DOC in https://www.bco-dmo.org/dataset/3093"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "CAR_069 until CAR_071",
+            "description": "Year 6 autumn Hydrographic measurements at CARIACO station",
+            "instrument": ["R/V Hermano Ginés"],
+            "startDate": "2001-08-07T00:00:00Z",
+            "endDate": "2001-10-09T00:00:00Z",
+            "location": {
+                "name": "CARIACO",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "-64.6670 10.500, -64.6670 10.500, -64.6660 10.500, -64.6660 10.500, -64.6670 10.500"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Yrene Astor",
+                "Dr Frank Muller-Karger",
+                "Dr Mary I. Scranton",
+                "Gordon T. Taylor",
+                "Dr Robert C. Thunell",
+                "Ramon Varela"
+            ],
+            "citation": "https://repository.oceanbestpractices.org/handle/11329/384",
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Portasal 8410",
+                "object":[
+                    "Autosal",
+                    "Glass bottle",
+                    "Standard: IAPSO"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title Salinity_bottles in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Winkler",
+                    "End-point detection: Visual Starch",
+                    "Carpenter"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title O2_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+           {
+                "@type": "Action",
+                "name": "Determination of nitrite and nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.7 µm GF/F filter"
+                ],
+                "result":[
+                    "nitrite and nitrite concentrations per seawatar mass",
+                    "Column title NO3_NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrite",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW) reference material",
+                    "Frozen",
+                    "Filtered: 0.7 µm GF/F filter"
+                ],
+                "result":[
+                    "nitrite concentrations per seawatar mass",
+                    "Column title NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.7 µm GF/F filter"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.7 µm GF/F filter",
+                    "Refrigerated"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SiO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.7 µm GF/F filter",
+                    "Frozen"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Double beam spectrophotometer",
+                "object":[
+                    "Spectrophotometer",
+                    "Poisoned",
+                    "Indicator: bromocresol green",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title Alkalinity_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of pH",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Ocean Optics S1000 dual channel fiber optic",
+                "object":[
+                    "Spectrophotometer",
+                    "Total Scale",
+                    "25°C",
+                    "Indicator: m-cresol purple",
+                    "R = A578/A434",
+                    "Parametrization: Clayton and Byrne (1993)",
+                    "Impurity Correction: 434Aimp corrective model"
+                ],
+                "result":[
+                    "pH value",
+                    "Column title pH_corrected in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) carbon concentrations per seawatar mass",
+                    "Column title POC_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) nitrogen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) nitrogen concentrations per seawatar mass",
+                    "Column title PON_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "total particulate phosphorus concentrations per seawatar mass",
+                    "Column title TPP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of inorganic particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "inorganic particulate phosphorus concentrations per seawatar mass",
+                    "Column title PIP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "CAR_072 until CAR_075",
+            "description": "Year 6 winter Hydrographic measurements at CARIACO station",
+            "instrument": ["R/V Hermano Ginés"],
+            "startDate": "2001-11-06T00:00:00Z",
+            "endDate": "2002-02-14T00:00:00Z",
+            "location": {
+                "name": "CARIACO",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "-64.6670 10.500, -64.6670 10.500, -64.6640 10.500, -64.6640 10.500, -64.6670 10.500"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Yrene Astor",
+                "Dr Frank Muller-Karger",
+                "Dr Mary I. Scranton",
+                "Gordon T. Taylor",
+                "Dr Robert C. Thunell",
+                "Ramon Varela"
+            ],
+            "citation": "https://repository.oceanbestpractices.org/handle/11329/384",
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Portasal 8410",
+                "object":[
+                    "Autosal",
+                    "Glass bottle",
+                    "Standard: IAPSO"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title Salinity_bottles in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Winkler",
+                    "End-point detection: Visual Starch",
+                    "Carpenter"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title O2_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+           {
+                "@type": "Action",
+                "name": "Determination of nitrite and nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.8 µm Nucleopore"
+                ],
+                "result":[
+                    "nitrite and nitrite concentrations per seawatar mass",
+                    "Column title NO3_NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrite",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW) reference material",
+                    "Frozen",
+                    "Filtered: 0.8 µm Nucleopore"
+                ],
+                "result":[
+                    "nitrite concentrations per seawatar mass",
+                    "Column title NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.8 µm Nucleopore"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.8 µm Nucleopore",
+                    "Refrigerated"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SiO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.8 µm Nucleopore",
+                    "Frozen"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Double beam spectrophotometer",
+                "object":[
+                    "Spectrophotometer",
+                    "Poisoned",
+                    "Indicator: bromocresol green",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title Alkalinity_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of pH",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Ocean Optics S1000 dual channel fiber optic",
+                "object":[
+                    "Spectrophotometer",
+                    "Total Scale",
+                    "25°C",
+                    "Indicator: m-cresol purple",
+                    "R = A578/A434",
+                    "Parametrization: Clayton and Byrne (1993)",
+                    "Impurity Correction: 434Aimp corrective model"
+                ],
+                "result":[
+                    "pH value",
+                    "Column title pH_corrected in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) carbon concentrations per seawatar mass",
+                    "Column title POC_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) nitrogen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) nitrogen concentrations per seawatar mass",
+                    "Column title PON_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "total particulate phosphorus concentrations per seawatar mass",
+                    "Column title TPP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of inorganic particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "inorganic particulate phosphorus concentrations per seawatar mass",
+                    "Column title PIP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            }]
+        },
+        {
+            "@type": "Event",
+            "name": "CAR_076 until CAR_232",
+            "description": "Year 7 until program end Hydrographic measurements at CARIACO station",
+            "instrument": ["R/V Hermano Ginés"],
+            "startDate": "2002-03-12T00:00:00Z",
+            "endDate": "2017-01-12T00:00:00Z",
+            "location": {
+                "name": "CARIACO",
+                "@type": "Place",
+                "geo": {
+                    "@type": "GeoShape",
+                    "polygon": "-64.7350 10.5370, -64.7350 10.4940, -64.6480 10.4940, -64.6480 10.5370, -64.7350 10.5370"
+                },
+                "additionalProperty": [
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "propertyID": "GPS Accuracy / Location error",
+                        "value": "18",
+                        "unitCode": "http://qudt.org/vocab/unit/M"
+                    }
+                ]
+            },
+            "organizer": [
+                "Yrene Astor",
+                "Dr Frank Muller-Karger",
+                "Dr Mary I. Scranton",
+                "Gordon T. Taylor",
+                "Dr Robert C. Thunell",
+                "Ramon Varela"
+            ],
+            "citation": "https://repository.oceanbestpractices.org/handle/11329/384",
+            "potentialAction": [{
+                "@type": "Action",
+                "name": "Determination of bottle salinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Guildline Portasal 8410",
+                "object":[
+                    "Autosal",
+                    "Glass bottle",
+                    "Standard: IAPSO"
+                ],
+                "result":[
+                    "Practical salinity of the water body",
+                    "Column title Salinity_bottles in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of bottle oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Winkler",
+                    "End-point detection: Visual Starch",
+                    "Carpenter"
+                ],
+                "result":[
+                    "Oxygen concentrations per seawatar mass",
+                    "Column title O2_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+           {
+                "@type": "Action",
+                "name": "Determination of nitrite and nitrate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.8 µm Nucleopore"
+                ],
+                "result":[
+                    "nitrite and nitrite concentrations per seawatar mass",
+                    "Column title NO3_NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of nitrite",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW) reference material",
+                    "Frozen",
+                    "Filtered: 0.8 µm Nucleopore"
+                ],
+                "result":[
+                    "nitrite concentrations per seawatar mass",
+                    "Column title NO2_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of phosphate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Frozen",
+                    "Filtered: 0.8 µm Nucleopore"
+                ],
+                "result":[
+                    "phosphate concentrations per seawatar mass",
+                    "Column title PO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of silicate",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.8 µm Nucleopore",
+                    "Refrigerated"
+                ],
+                "result":[
+                    "silicate concentrations per seawatar mass",
+                    "Column title SiO4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of ammonium",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Technicon Autoanalyzer II",
+                "object":[
+                    "Autoanalyzer",
+                    "Carrier solution: Low nutrient sea water (LNSW)",
+                    "Filtered: 0.8 µm Nucleopore",
+                    "Frozen"
+                ],
+                "result":[
+                    "ammonium concentrations per seawatar mass",
+                    "Column title NH4_USF in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total alkalinity",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Double beam spectrophotometer",
+                "object":[
+                    "Spectrophotometer",
+                    "Poisoned",
+                    "Indicator: bromocresol green",
+                    "CRM"
+                ],
+                "result":[
+                    "total alkalinity per seawatar mass",
+                    "Column title Alkalinity_umol_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of pH",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Ocean Optics S2000 dual channel fiber optic",
+                "object":[
+                    "Spectrophotometer",
+                    "Total Scale",
+                    "25°C",
+                    "Indicator: m-cresol purple",
+                    "R = A578/A434",
+                    "Parametrization: Clayton and Byrne (1993)",
+                    "Impurity Correction: 434Aimp corrective model"
+                ],
+                "result":[
+                    "pH value",
+                    "Column title pH_corrected in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) carbon concentrations per seawatar mass",
+                    "Column title POC_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of particulate (organic) nitrogen",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "Perkin Elmer model 2400",
+                "object":[
+                    "High temperature combustion",
+                    "Filtered (25-mm)",
+                    "Combust",
+                    "Dried",
+                    "Standard: Cystine crystals",
+                    "Frozen"
+                ],
+                "result":[
+                    "particulate (organic) nitrogen concentrations per seawatar mass",
+                    "Column title PON_ug_kg in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of total particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "total particulate phosphorus concentrations per seawatar mass",
+                    "Column title TPP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of inorganic particulate phosphorus",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": "NA",
+                "object":[
+                    "Ash hydrolysis",
+                    "SRM: tomato leaves (NIST #1573a)",
+                    "SRM: estuarine sediment (NIST #1646a)",
+                    "Frozen"
+                ],
+                "result":[
+                    "inorganic particulate phosphorus concentrations per seawatar mass",
+                    "Column title PIP in https://www.bco-dmo.org/dataset/3093"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of dissolved organic carbon",
+                "actionStatus": "CompletedActionStatus",
+                "instrument": [
+                    "Shimadzu TOC-L CPH",
+                    "ASI-L auto sampler",
+                    "TNM-L total nitrogen detector"
+                ],
+                "object":[
+                    "High temperature combustion",
+                    "Frozen",
+                    "Filter: 0.7 µm",
+                    "CRM: Hansell"
+                ],
+                "result":[
+                    "dissolved organic carbon concentrations per seawatar mass",
+                    "Column title DOC in https://www.bco-dmo.org/dataset/3093"
+                ]
+            }]
+        }
+    ]
+}

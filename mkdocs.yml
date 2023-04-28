@@ -1,0 +1,8 @@
+site_name: METS-RCN Metadata of time series stations (BGC pilot product)
+site_url: https://github.com/NicoGEOMAR/METS-RCN
+docs_dir: Examples
+#theme: 'material'
+#theme: 'mkdocs'
+nav:
+  - Readme: README.md
+

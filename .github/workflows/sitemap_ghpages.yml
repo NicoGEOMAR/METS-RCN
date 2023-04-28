@@ -1,0 +1,72 @@
+name: Generate xml sitemap
+# In github settings
+# pages, deploy from a branch
+#   branch gh_pages > root
+
+# sitemap will be at: https://earthcube.github.io/METS-RCN/sitemap.xml
+# sitemap will be at: https://METS-RCN.github.io/METS-RCN/sitemap.xml
+on:
+  push:
+    branches:
+      # using env variable in base-url-path does work
+      #        base-url-path: https://raw.githubusercontent.com/earthcube/GeoCODES-Metadata/$GITHUB_BASE_REF/metadata/Dataset/allgood
+      # so it you want to trigger a sitemap for your branch commit and change branches
+      # don't forget to roll back before PR.
+      - main
+      - ec
+
+jobs:
+  #  docs_deploy:
+  #    runs-on: ubuntu-latest
+  #    steps:
+  #      - uses: actions/setup-python@v2
+  #        with:
+  #          python-version: 3.x
+  #      - run: pip install mkdocs
+  #      - run: pip install mkdocs-schema-reader
+  #      - name: Checkout
+  #        uses: actions/checkout@v3
+  #
+  #      #     - run: cd docs/ && mkdocs gh-deploy --force --clean --verbose
+  #      #      - run:  mkdocs gh-deploy --force --clean --verbose
+  #      - run: mkdocs gh-deploy  --force --clean --verbose
+
+  sitemap_job:
+    #    needs:   docs_deploy
+    runs-on: ubuntu-latest
+    name: Generate a sitemap
+    steps:
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs
+      - run: pip install mkdocs-schema-reader
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+        #   - run: mkdocs gh-deploy  --force --clean --verbose
+
+        #  the original sitemap, at metadata/Dataset root
+      - name: Generate the dataset allgood sitemap
+        id: sitemapdatasetallgood
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://raw.githubusercontent.com/earthcube/METS-RCN/ec/
+          path-to-root: .
+          include-pdf: false
+          additional-extensions: json jsonld
+      - name: Output dataset allgood stats
+        run: |
+          echo "sitemap-path = ${{ steps.sitemapdatasetallgood.outputs.sitemap-path }}"
+          echo "url-count = ${{ steps.sitemapdatasetallgood.outputs.url-count }}"
+          echo "excluded-count = ${{ steps.sitemapdatasetallgood.outputs.excluded-count }}"
+      #
+
+      - run: mkdocs build --config-file mkdocs.yml
+      - name: push to gh pages
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          branch: gh-pages
+          folder: .
+          clean: false
